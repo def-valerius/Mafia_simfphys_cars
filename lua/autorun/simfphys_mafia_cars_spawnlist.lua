@@ -224,38 +224,34 @@ local V = {
 		
 		EnginePos = Vector(50,0,28),
 		
-		LightsTable = "fordtfor",
+		LightsTable = "fordtpi",
 		
 		CustomWheels = true,
 		CustomSuspensionTravel = 5,
 		
 		CustomWheelModel = "models/mafia/fordt_wheel.mdl",
-		CustomWheelPosFL = Vector(69,24,0),
-		CustomWheelPosFR = Vector(69,-28,0),
-		CustomWheelPosRL = Vector(-31,24,0),
-		CustomWheelPosRR = Vector(-31,-28,0),
+		CustomWheelPosFL = Vector(59,27,2),
+		CustomWheelPosFR = Vector(59,-28,2),
+		CustomWheelPosRL = Vector(-38,27,2),
+		CustomWheelPosRR = Vector(-38,-28,2),
 		CustomWheelAngleOffset = Angle(0,90,0),
 		
 		CustomMassCenter = Vector(10,0,10),
 		
 		CustomSteerAngle = 30,
 		
-		SeatOffset = Vector(-5,-8,44),
+		SeatOffset = Vector(-15,-10,45),
 		SeatPitch = 10,
 		SeatYaw = 90,
 		
 		PassengerSeats = {
 			{
-				pos = Vector(12,-9,12),
+				pos = Vector(4,-9,13),
 				ang = Angle(0,-90,17)
 			},
 			{
-				pos = Vector(-16,-9,12),
-				ang = Angle(0,-90,12)
-			},
-			{
-				pos = Vector(-16,9,12),
-				ang = Angle(0,-90,12)
+				pos = Vector(-60,-9,20),
+				ang = Angle(0,0,20)
 			}
 		},
 		
