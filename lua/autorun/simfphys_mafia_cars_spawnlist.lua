@@ -319,4 +319,4 @@ local V = {
 		Gears = {-0.12,0,0.1,0.4}
 	}
 }
-list.Set( "simfphys_vehicles", "simfphys_mafia_fordtfpi", V )
+list.Set( "simfphys_vehicles", "simfphys_mafia_fordtpi", V )
