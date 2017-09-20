@@ -1377,3 +1377,207 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_foratu", V )
+
+local V = {
+	Name = "Bolt V8 Coupe",
+	Model = "models/mafia/forVco.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1170,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "forvco",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/ForA_wheel.mdl",
+		CustomWheelPosFL = Vector(70,29,5),
+		CustomWheelPosFR = Vector(71,-30,5),
+		CustomWheelPosRL = Vector(-44,29,5),
+		CustomWheelPosRR = Vector(-44,-30,5),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-21,-8,43),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-6,-11,10),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,-20,3),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 18000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 6,
+		RearConstant = 18000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 28,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 18,
+		
+		IdleRPM = 600,
+		LimitRPM = 2800,
+		PeakTorque = 90,
+		PowerbandStart = 800,
+		PowerbandEnd = 2600,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-40,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 25,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = -1,
+		
+		snd_pitch = 1,
+		snd_idle = "mafia/fordV8_0.wav",
+		
+		snd_low = "mafia/fordV8_3.wav",
+		snd_low_revdown = "mafia/fordV8_3.wav",
+		snd_low_pitch = 0.8,
+		
+		snd_mid = "mafia/fordV8_3.wav",
+		snd_mid_gearup = "mafia/fordV8_3.wav",
+		snd_mid_pitch = 0.7,
+		
+		snd_horn = "mafia/horn4.wav",
+		
+		DifferentialGear = 0.7,
+		Gears = {-0.12,0,0.15,0.35,0.6}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_forvco", V )
+
+local V = {
+	Name = "Bolt V8 Fordor",
+	Model = "models/mafia/forVfor.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1170,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "forvfor",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/ForA_wheel.mdl",
+		CustomWheelPosFL = Vector(70,29,5),
+		CustomWheelPosFR = Vector(71,-30,5),
+		CustomWheelPosRL = Vector(-44,29,5),
+		CustomWheelPosRR = Vector(-44,-30,5),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-21,-8,43),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-6,-11,10),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,-20,3),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 18000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 6,
+		RearConstant = 18000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 28,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 18,
+		
+		IdleRPM = 600,
+		LimitRPM = 2800,
+		PeakTorque = 90,
+		PowerbandStart = 800,
+		PowerbandEnd = 2600,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-40,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 25,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = -1,
+		
+		snd_pitch = 1,
+		snd_idle = "mafia/fordV8_0.wav",
+		
+		snd_low = "mafia/fordV8_3.wav",
+		snd_low_revdown = "mafia/fordV8_3.wav",
+		snd_low_pitch = 0.8,
+		
+		snd_mid = "mafia/fordV8_3.wav",
+		snd_mid_gearup = "mafia/fordV8_3.wav",
+		snd_mid_pitch = 0.7,
+		
+		snd_horn = "mafia/horn4.wav",
+		
+		DifferentialGear = 0.7,
+		Gears = {-0.12,0,0.15,0.35,0.6}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_forvfor", V )
