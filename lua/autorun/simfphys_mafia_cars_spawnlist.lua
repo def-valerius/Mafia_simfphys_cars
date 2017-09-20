@@ -653,57 +653,49 @@ local V = {
 		
 		EnginePos = Vector(50,0,28),
 		
-		LightsTable = "fordttud",
+		LightsTable = "foraca",
 		
 		CustomWheels = true,
 		CustomSuspensionTravel = 5,
 		
 		CustomWheelModel = "models/mafia/ForA_wheel.mdl",
-		CustomWheelPosFL = Vector(60,27,1),
-		CustomWheelPosFR = Vector(60,-28,1),
-		CustomWheelPosRL = Vector(-37,27,1),
-		CustomWheelPosRR = Vector(-37,-28,1),
+		CustomWheelPosFL = Vector(63,30,1),
+		CustomWheelPosFR = Vector(63,-31,1),
+		CustomWheelPosRL = Vector(-54,30,1),
+		CustomWheelPosRR = Vector(-54,-31,1),
 		CustomWheelAngleOffset = Angle(0,90,0),
 		
 		CustomMassCenter = Vector(10,0,10),
 		
 		CustomSteerAngle = 30,
 		
-		SeatOffset = Vector(-14,-10,44),
+		SeatOffset = Vector(-25,-10,40),
 		SeatPitch = 10,
 		SeatYaw = 90,
 		
 		PassengerSeats = {
 			{
-				pos = Vector(3,-9,12),
+				pos = Vector(-10,-11,12),
 				ang = Angle(0,-90,17)
-			},
-			{
-				pos = Vector(-30,-9,12),
-				ang = Angle(0,-90,12)
-			},
-			{
-				pos = Vector(-30,9,12),
-				ang = Angle(0,-90,12)
 			}
 		},
 		
 		ExhaustPositions = {
 			{
-				pos = Vector(-35,-10,7),
+				pos = Vector(-70,-10,3),
 				ang = Angle(90,165,0),
 			}
 		},
 		
-		FrontHeight = 7,
-		FrontConstant = 15000,
-		FrontDamping = 800,
-		FrontRelativeDamping = 800,
+		FrontHeight = 8,
+		FrontConstant = 18000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
 		
 		RearHeight = 6,
-		RearConstant = 15000,
-		RearDamping = 800,
-		RearRelativeDamping = 800,
+		RearConstant = 18000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
 		
 		FastSteeringAngle = 10,
 		SteeringFadeFastSpeed = 535,
@@ -715,37 +707,37 @@ local V = {
 		GripOffset = -2,
 		BrakePower = 10,
 		
-		IdleRPM = 300,
-		LimitRPM = 2100,
-		PeakTorque = 50,
-		PowerbandStart = 500,
-		PowerbandEnd = 1800,
+		IdleRPM = 600,
+		LimitRPM = 2400,
+		PeakTorque = 70,
+		PowerbandStart = 800,
+		PowerbandEnd = 2100,
 		Turbocharged = false,
 		Supercharged = false,
 		
-		FuelFillPos = Vector(-50,0,28),
+		FuelFillPos = Vector(20,0,10),
 		FuelType = FUELTYPE_PETROL,
-		FuelTankSize = 10,
+		FuelTankSize = 18,
 		
 		PowerBias = 1,
 		
 		EngineSoundPreset = -1,
 		
 		snd_pitch = 0.9,
-		snd_idle = "mafia/fordt_npc.wav",
+		snd_idle = "mafia/fordA1_NPC.wav",
 		
-		snd_low = "mafia/fordt_npc.wav",
-		snd_low_revdown = "mafia/fordt_npc.wav",
+		snd_low = "mafia/fordA1_NPC.wav",
+		snd_low_revdown = "mafia/fordA1_NPC.wav",
 		snd_low_pitch = 0.9,
 		
-		snd_mid = "mafia/fordt_npc.wav",
-		snd_mid_gearup = "mafia/fordt_npc.wav",
+		snd_mid = "mafia/fordA1_NPC.wav",
+		snd_mid_gearup = "mafia/fordA1_NPC.wav",
 		snd_mid_pitch = 0.9,
 		
 		snd_horn = "mafia/horn3.wav",
 		
 		DifferentialGear = 0.8,
-		Gears = {-0.12,0,0.1,0.4}
+		Gears = {-0.12,0,0.1,0.3,0.5}
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_fordaca", V )
