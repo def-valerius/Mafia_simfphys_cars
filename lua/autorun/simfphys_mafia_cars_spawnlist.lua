@@ -1398,7 +1398,7 @@ local V = {
 		
 		CustomWheelModel = "models/mafia/ForA_wheel.mdl",
 		CustomWheelPosFL = Vector(70,29,5),
-		CustomWheelPosFR = Vector(71,-30,5),
+		CustomWheelPosFR = Vector(70,-30,5),
 		CustomWheelPosRL = Vector(-44,29,5),
 		CustomWheelPosRR = Vector(-44,-30,5),
 		CustomWheelAngleOffset = Angle(0,90,0),
@@ -1499,23 +1499,29 @@ local V = {
 		CustomSuspensionTravel = 5,
 		
 		CustomWheelModel = "models/mafia/ForA_wheel.mdl",
-		CustomWheelPosFL = Vector(70,29,5),
-		CustomWheelPosFR = Vector(71,-30,5),
-		CustomWheelPosRL = Vector(-44,29,5),
-		CustomWheelPosRR = Vector(-44,-30,5),
+		CustomWheelPosFL = Vector(68,29,2),
+		CustomWheelPosFR = Vector(68,-30,2),
+		CustomWheelPosRL = Vector(-48,29,2),
+		CustomWheelPosRR = Vector(-48,-30,2),
 		CustomWheelAngleOffset = Angle(0,90,0),
 		
 		CustomMassCenter = Vector(10,0,10),
 		
 		CustomSteerAngle = 30,
 		
-		SeatOffset = Vector(-21,-8,43),
+		SeatOffset = Vector(-14,-10,40),
 		SeatPitch = 10,
 		SeatYaw = 90,
 		
 		PassengerSeats = {
 			{
-				pos = Vector(-6,-11,10),
+				pos = Vector(0,-11,10),
+				ang = Angle(0,-90,17)
+			},{
+				pos = Vector(-33,-11,10),
+				ang = Angle(0,-90,17)
+			},{
+				pos = Vector(-33,11,10),
 				ang = Angle(0,-90,17)
 			}
 		},
@@ -1555,7 +1561,7 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
-		FuelFillPos = Vector(-40,0,30),
+		FuelFillPos = Vector(-50,0,30),
 		FuelType = FUELTYPE_PETROL,
 		FuelTankSize = 25,
 		
