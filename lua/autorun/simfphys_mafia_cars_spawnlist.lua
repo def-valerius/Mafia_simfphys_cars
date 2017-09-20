@@ -316,3 +316,326 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_fordtpi", V )
+
+local V = {
+	Name = "Bolt Ace Runabout",
+	Model = "models/mafia/fordtru.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 800,
+		
+		EnginePos = Vector(46,0,28),
+		
+		LightsTable = "fordtru",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/fordt_wheel.mdl",
+		CustomWheelPosFL = Vector(57,25,3),
+		CustomWheelPosFR = Vector(57,-28,3),
+		CustomWheelPosRL = Vector(-45,25,3),
+		CustomWheelPosRR = Vector(-45,-28,3),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-20,-8,43),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-1,-9,14),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-35,-10,7),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 7,
+		FrontConstant = 15000,
+		FrontDamping = 800,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 6,
+		RearConstant = 15000,
+		RearDamping = 800,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 20,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 10,
+		
+		IdleRPM = 300,
+		LimitRPM = 2100,
+		PeakTorque = 50,
+		PowerbandStart = 500,
+		PowerbandEnd = 1800,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-50,0,28),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 10,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = -1,
+		
+		snd_pitch = 0.9,
+		snd_idle = "mafia/fordt_npc.wav",
+		
+		snd_low = "mafia/fordt_npc.wav",
+		snd_low_revdown = "mafia/fordt_npc.wav",
+		snd_low_pitch = 0.9,
+		
+		snd_mid = "mafia/fordt_npc.wav",
+		snd_mid_gearup = "mafia/fordt_npc.wav",
+		snd_mid_pitch = 0.9,
+		
+		snd_horn = "mafia/horn1.wav",
+		
+		DifferentialGear = 0.8,
+		Gears = {-0.12,0,0.1,0.4}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_fordtru", V )
+
+local V = {
+	Name = "Bolt Ace Touring",
+	Model = "models/mafia/fordtto.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 800,
+		
+		EnginePos = Vector(46,0,28),
+		
+		LightsTable = "fordtto",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/fordt_wheel.mdl",
+		CustomWheelPosFL = Vector(65,25,4),
+		CustomWheelPosFR = Vector(65,-28,4),
+		CustomWheelPosRL = Vector(-32,25,4),
+		CustomWheelPosRR = Vector(-32,-28,4),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-9,-9,46),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(7,-10,13),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-25,-9,12),
+				ang = Angle(0,-90,12)
+			},
+			{
+				pos = Vector(-25,7,12),
+				ang = Angle(0,-90,12)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-35,-10,7),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 7,
+		FrontConstant = 15000,
+		FrontDamping = 800,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 6,
+		RearConstant = 15000,
+		RearDamping = 800,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 20,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 10,
+		
+		IdleRPM = 300,
+		LimitRPM = 2100,
+		PeakTorque = 50,
+		PowerbandStart = 500,
+		PowerbandEnd = 1800,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-50,0,28),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 10,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = -1,
+		
+		snd_pitch = 0.9,
+		snd_idle = "mafia/fordt_npc.wav",
+		
+		snd_low = "mafia/fordt_npc.wav",
+		snd_low_revdown = "mafia/fordt_npc.wav",
+		snd_low_pitch = 0.9,
+		
+		snd_mid = "mafia/fordt_npc.wav",
+		snd_mid_gearup = "mafia/fordt_npc.wav",
+		snd_mid_pitch = 0.9,
+		
+		snd_horn = "mafia/horn1.wav",
+		
+		DifferentialGear = 0.8,
+		Gears = {-0.12,0,0.1,0.4}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_fordtto", V )
+
+
+local V = {
+	Name = "Bolt Ace Tudor",
+	Model = "models/mafia/fordttud.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 800,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "fordttud",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/fordt_wheel.mdl",
+		CustomWheelPosFL = Vector(60,27,1),
+		CustomWheelPosFR = Vector(60,-28,1),
+		CustomWheelPosRL = Vector(-37,27,1),
+		CustomWheelPosRR = Vector(-37,-28,1),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-14,-10,44),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(3,-9,12),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-30,-9,12),
+				ang = Angle(0,-90,12)
+			},
+			{
+				pos = Vector(-30,9,12),
+				ang = Angle(0,-90,12)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-35,-10,7),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 7,
+		FrontConstant = 15000,
+		FrontDamping = 800,
+		FrontRelativeDamping = 800,
+		
+		RearHeight = 6,
+		RearConstant = 15000,
+		RearDamping = 800,
+		RearRelativeDamping = 800,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 20,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 10,
+		
+		IdleRPM = 300,
+		LimitRPM = 2100,
+		PeakTorque = 50,
+		PowerbandStart = 500,
+		PowerbandEnd = 1800,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-50,0,28),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 10,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = -1,
+		
+		snd_pitch = 0.9,
+		snd_idle = "mafia/fordt_npc.wav",
+		
+		snd_low = "mafia/fordt_npc.wav",
+		snd_low_revdown = "mafia/fordt_npc.wav",
+		snd_low_pitch = 0.9,
+		
+		snd_mid = "mafia/fordt_npc.wav",
+		snd_mid_gearup = "mafia/fordt_npc.wav",
+		snd_mid_pitch = 0.9,
+		
+		snd_horn = "mafia/horn1.wav",
+		
+		DifferentialGear = 0.8,
+		Gears = {-0.12,0,0.1,0.4}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_fordttud", V )
