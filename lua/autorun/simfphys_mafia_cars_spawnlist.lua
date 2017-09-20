@@ -740,4 +740,322 @@ local V = {
 		Gears = {-0.12,0,0.1,0.3,0.5}
 	}
 }
-list.Set( "simfphys_vehicles", "simfphys_mafia_fordaca", V )
+list.Set( "simfphys_vehicles", "simfphys_mafia_foraca", V )
+
+local V = {
+	Name = "Bolt Model B Coupe",
+	Model = "models/mafia/ForAcou.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1000,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "foracou",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/ForA_wheel.mdl",
+		CustomWheelPosFL = Vector(69,30,-2),
+		CustomWheelPosFR = Vector(69,-31,-2),
+		CustomWheelPosRL = Vector(-46,30,-2),
+		CustomWheelPosRR = Vector(-46,-31,-2),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-20,-11,38),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-6,-11,10),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,-20,3),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 18000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 6,
+		RearConstant = 18000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 20,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 10,
+		
+		IdleRPM = 600,
+		LimitRPM = 2400,
+		PeakTorque = 70,
+		PowerbandStart = 800,
+		PowerbandEnd = 2100,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(20,0,10),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 18,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = -1,
+		
+		snd_pitch = 0.9,
+		snd_idle = "mafia/fordA1_NPC.wav",
+		
+		snd_low = "mafia/fordA1_NPC.wav",
+		snd_low_revdown = "mafia/fordA1_NPC.wav",
+		snd_low_pitch = 0.9,
+		
+		snd_mid = "mafia/fordA1_NPC.wav",
+		snd_mid_gearup = "mafia/fordA1_NPC.wav",
+		snd_mid_pitch = 0.9,
+		
+		snd_horn = "mafia/horn3.wav",
+		
+		DifferentialGear = 0.8,
+		Gears = {-0.12,0,0.1,0.3,0.5}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_foracou", V )
+
+local V = {
+	Name = "Bolt Model B Delivery",
+	Model = "models/mafia/ForAde.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 950,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "forade",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/ForA_wheel.mdl",
+		CustomWheelPosFL = Vector(67,32,0),
+		CustomWheelPosFR = Vector(67,-30,0),
+		CustomWheelPosRL = Vector(-47,32,0),
+		CustomWheelPosRR = Vector(-47,-30,0),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-16,-12,39),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-1,-11,10),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-50,0,10),
+				ang = Angle(0,90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,-20,3),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 18000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 6,
+		RearConstant = 18000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 20,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 10,
+		
+		IdleRPM = 600,
+		LimitRPM = 2400,
+		PeakTorque = 70,
+		PowerbandStart = 800,
+		PowerbandEnd = 2100,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(20,0,10),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 18,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = -1,
+		
+		snd_pitch = 0.9,
+		snd_idle = "mafia/fordA1_NPC.wav",
+		
+		snd_low = "mafia/fordA1_NPC.wav",
+		snd_low_revdown = "mafia/fordA1_NPC.wav",
+		snd_low_pitch = 0.9,
+		
+		snd_mid = "mafia/fordA1_NPC.wav",
+		snd_mid_gearup = "mafia/fordA1_NPC.wav",
+		snd_mid_pitch = 0.9,
+		
+		snd_horn = "mafia/horn3.wav",
+		
+		DifferentialGear = 0.8,
+		Gears = {-0.12,0,0.1,0.3,0.5}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_forade", V )
+
+local V = {
+	Name = "Bolt Model B Fordor",
+	Model = "models/mafia/ForAfo.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1000,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "forafo",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/ForA_wheel.mdl",
+		CustomWheelPosFL = Vector(76,33,-1),
+		CustomWheelPosFR = Vector(76,-34,-1),
+		CustomWheelPosRL = Vector(-37,33,-1),
+		CustomWheelPosRR = Vector(-37,-34,-1),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-6,-10,39),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(7,-11,10),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-28,-11,10),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-28,11,10),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,-20,3),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 18000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 6,
+		RearConstant = 18000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 20,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 10,
+		
+		IdleRPM = 600,
+		LimitRPM = 2400,
+		PeakTorque = 70,
+		PowerbandStart = 800,
+		PowerbandEnd = 2100,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(20,0,10),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 18,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = -1,
+		
+		snd_pitch = 0.9,
+		snd_idle = "mafia/fordA1_NPC.wav",
+		
+		snd_low = "mafia/fordA1_NPC.wav",
+		snd_low_revdown = "mafia/fordA1_NPC.wav",
+		snd_low_pitch = 0.9,
+		
+		snd_mid = "mafia/fordA1_NPC.wav",
+		snd_mid_gearup = "mafia/fordA1_NPC.wav",
+		snd_mid_pitch = 0.9,
+		
+		snd_horn = "mafia/horn3.wav",
+		
+		DifferentialGear = 0.8,
+		Gears = {-0.12,0,0.1,0.3,0.5}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_forafo", V )
