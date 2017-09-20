@@ -1059,3 +1059,109 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_forafo", V )
+
+local V = {
+	Name = "Bolt Model B Pickup",
+	Model = "models/mafia/ForApic.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 950,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "forapic",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/ForA_wheel.mdl",
+		CustomWheelPosFL = Vector(67,28,0),
+		CustomWheelPosFR = Vector(67,-33,0),
+		CustomWheelPosRL = Vector(-45,28,0),
+		CustomWheelPosRR = Vector(-45,-33,0),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-16,-8,40),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-1,-11,10),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-50,0,20),
+				ang = Angle(0,90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,-20,3),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 18000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 6,
+		RearConstant = 18000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 20,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 10,
+		
+		IdleRPM = 600,
+		LimitRPM = 2400,
+		PeakTorque = 70,
+		PowerbandStart = 800,
+		PowerbandEnd = 2100,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(20,0,10),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 18,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = -1,
+		
+		snd_pitch = 0.9,
+		snd_idle = "mafia/fordA1_NPC.wav",
+		
+		snd_low = "mafia/fordA1_NPC.wav",
+		snd_low_revdown = "mafia/fordA1_NPC.wav",
+		snd_low_pitch = 0.9,
+		
+		snd_mid = "mafia/fordA1_NPC.wav",
+		snd_mid_gearup = "mafia/fordA1_NPC.wav",
+		snd_mid_pitch = 0.9,
+		
+		snd_horn = "mafia/horn3.wav",
+		
+		DifferentialGear = 0.8,
+		Gears = {-0.12,0,0.1,0.3,0.5}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_forapic", V )
