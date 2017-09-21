@@ -2508,7 +2508,7 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
-		FuelFillPos = Vector(-50,0,30),
+		FuelFillPos = Vector(-40,0,40),
 		FuelType = FUELTYPE_PETROL,
 		FuelTankSize = 30,
 		
@@ -2543,3 +2543,220 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_alfa", V )
+
+local V = {
+	Name = "Caesar 8C Mostro",
+	Model = "models/mafia/alfa8C.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1000,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "alfa8C",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/alfa8C_wheel.mdl",
+		CustomWheelPosFL = Vector(64,28,6),
+		CustomWheelPosFR = Vector(64,-32,6),
+		CustomWheelPosRL = Vector(-59,28,6),
+		CustomWheelPosRR = Vector(-59,-32,6),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-42,-8,40),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-25,-12,14),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,-10,20),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 3,
+		FrontConstant = 18000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 2,
+		RearConstant = 18000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 28,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 18,
+		
+		IdleRPM = 800,
+		LimitRPM = 6000,
+		PeakTorque = 100,
+		PowerbandStart = 900,
+		PowerbandEnd = 5700,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-50,0,40),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 35,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/alfa8c_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/alfa8c_2.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 10,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/alfa8c_3.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/alfa8c_4.wav",
+		Sound_ThrottlePitch = 0.8,
+		Sound_ThrottleVolume = 10,
+		
+		--
+		snd_horn = "mafia/horn9.wav",
+		
+		DifferentialGear = 0.6,
+		Gears = {-0.12,0,0.15,0.27,0.42}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_alfa8C", V )
+
+local V = {
+	Name = "Carrozella C-Otto",
+	Model = "models/mafia/bugatti.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,0),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 950,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "mafia_racer",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1,
+		
+		CustomWheelModel = "models/mafia/bugatti_wheel.mdl",
+		CustomWheelPosFL = Vector(60,28,18),
+		CustomWheelPosFR = Vector(60,-27,18),
+		CustomWheelPosRL = Vector(-63,28,18),
+		CustomWheelPosRR = Vector(-63,-27,18),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-45,6,40),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-78,13,28),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 30000,
+		FrontDamping = 400,
+		FrontRelativeDamping = 400,
+		
+		RearHeight = 6,
+		RearConstant = 30000,
+		RearDamping = 400,
+		RearRelativeDamping = 400,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 2,
+		
+		MaxGrip = 33,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 23,
+		
+		IdleRPM = 600,
+		LimitRPM = 8000,
+		PeakTorque = 140,
+		PowerbandStart = 800,
+		PowerbandEnd = 7800,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-60,0,37),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 30,
+		
+		PowerBias = 0.85,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/bug_x.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/bug_2.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 8,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/bug_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/bug_3.wav",
+		Sound_ThrottlePitch = 0.9,
+		Sound_ThrottleVolume = 8,
+		
+		--
+		snd_horn = "mafia/horn4.wav",
+		
+		DifferentialGear = 0.6,
+		Gears = {-0.12,0,0.1,0.25,0.4}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_bugatti", V )
