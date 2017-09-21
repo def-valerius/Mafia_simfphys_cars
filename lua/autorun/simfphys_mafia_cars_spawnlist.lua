@@ -2437,3 +2437,109 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_speedster", V )
+
+local V = {
+	Name = "Caesar 8C 2300 Racing",
+	Model = "models/mafia/alfa.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,0),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 920,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "mafia_racer",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1,
+		
+		CustomWheelModel = "models/mafia/alfa_wheel.mdl",
+		CustomWheelPosFL = Vector(60,27,17),
+		CustomWheelPosFR = Vector(60,-26,17),
+		CustomWheelPosRL = Vector(-50,27,17),
+		CustomWheelPosRR = Vector(-50,-26,17),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-20,5,50),
+		SeatPitch = -8,
+		SeatYaw = 90,
+		
+		
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-69,13,28),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 17000,
+		FrontDamping = 300,
+		FrontRelativeDamping = 300,
+		
+		RearHeight = 6,
+		RearConstant = 17000,
+		RearDamping = 300,
+		RearRelativeDamping = 300,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 2,
+		
+		MaxGrip = 33,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 23,
+		
+		IdleRPM = 600,
+		LimitRPM = 8000,
+		PeakTorque = 120,
+		PowerbandStart = 800,
+		PowerbandEnd = 7800,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-50,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 30,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/alfa_x.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/alfa_1.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 10,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/alfa_1.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/alfa_2.wav",
+		Sound_ThrottlePitch = 1.3,
+		Sound_ThrottleVolume = 10,
+		
+		--
+		snd_horn = "mafia/horn4.wav",
+		
+		DifferentialGear = 0.63,
+		Gears = {-0.12,0,0.12,0.26,0.4}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_alfa", V )
