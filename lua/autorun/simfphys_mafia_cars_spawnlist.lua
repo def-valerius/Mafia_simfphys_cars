@@ -881,7 +881,7 @@ local V = {
 		
 		--
 		
-		snd_horn = "mafia/horn3.wav",
+		snd_horn = "mafia/horn5.wav",
 		
 		DifferentialGear = 0.8,
 		Gears = {-0.12,0,0.1,0.3,0.5}
@@ -1003,7 +1003,7 @@ local V = {
 		Sound_ThrottleVolume = 1,
 		
 		--
-		snd_horn = "mafia/horn3.wav",
+		snd_horn = "mafia/horn5.wav",
 		
 		DifferentialGear = 0.8,
 		Gears = {-0.12,0,0.1,0.3,0.5}
@@ -1129,7 +1129,7 @@ local V = {
 		Sound_ThrottleVolume = 1,
 		
 		--
-		snd_horn = "mafia/horn3.wav",
+		snd_horn = "mafia/horn5.wav",
 		
 		DifferentialGear = 0.8,
 		Gears = {-0.12,0,0.1,0.3,0.5}
@@ -1259,7 +1259,7 @@ local V = {
 		Sound_ThrottleVolume = 1,
 		
 		--
-		snd_horn = "mafia/horn3.wav",
+		snd_horn = "mafia/horn5.wav",
 		
 		DifferentialGear = 0.8,
 		Gears = {-0.12,0,0.1,0.3,0.5}
@@ -1385,7 +1385,7 @@ local V = {
 		Sound_ThrottleVolume = 1,
 		
 		--
-		snd_horn = "mafia/horn3.wav",
+		snd_horn = "mafia/horn5.wav",
 		
 		DifferentialGear = 0.8,
 		Gears = {-0.12,0,0.1,0.3,0.5}
@@ -1507,7 +1507,7 @@ local V = {
 		Sound_ThrottleVolume = 1,
 		
 		--
-		snd_horn = "mafia/horn3.wav",
+		snd_horn = "mafia/horn5.wav",
 		
 		DifferentialGear = 0.8,
 		Gears = {-0.12,0,0.1,0.3,0.5}
@@ -1637,7 +1637,7 @@ local V = {
 		Sound_ThrottleVolume = 1,
 		
 		--
-		snd_horn = "mafia/horn3.wav",
+		snd_horn = "mafia/horn5.wav",
 		
 		DifferentialGear = 0.8,
 		Gears = {-0.12,0,0.1,0.3,0.5}
@@ -2258,7 +2258,7 @@ local V = {
 		
 		ExhaustPositions = {
 			{
-				pos = Vector(-70,-20,3),
+				pos = Vector(-69,-13,28),
 				ang = Angle(90,165,0),
 			}
 		},
@@ -2326,3 +2326,114 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_miller", V )
+
+local V = {
+	Name = "Bruno Speedster 851",
+	Model = "models/mafia/speedster.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1702,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "speedster",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/speedster_wheel.mdl",
+		CustomWheelPosFL = Vector(58,30,3),
+		CustomWheelPosFR = Vector(58,-31,3),
+		CustomWheelPosRL = Vector(-78,30,3),
+		CustomWheelPosRR = Vector(-78,-31,3),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-40,-9,40),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-25,-10,14),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,-20,3),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 3,
+		FrontConstant = 18000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 2,
+		RearConstant = 18000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 30,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 18,
+		
+		IdleRPM = 700,
+		LimitRPM = 4500,
+		PeakTorque = 150,
+		PowerbandStart = 900,
+		PowerbandEnd = 4300,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-50,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 35,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/aubur_x.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/aubur_1.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 10,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/aubur_3.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/aubur_2.wav",
+		Sound_ThrottlePitch = 0.8,
+		Sound_ThrottleVolume = 10,
+		
+		--
+		snd_horn = "mafia/horn9.wav",
+		
+		DifferentialGear = 0.6,
+		Gears = {-0.12,0,0.16,0.28,0.48}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_speedster", V )
