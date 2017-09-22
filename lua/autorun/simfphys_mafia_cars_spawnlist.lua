@@ -2864,7 +2864,7 @@ local V = {
 		Sound_ThrottleVolume = 6,
 		
 		--
-		snd_horn = "mafia/horn9.wav",
+		snd_horn = "mafia/horn13.wav",
 		
 		DifferentialGear = 0.5,
 		Gears = {-0.15,0,0.12,0.25,0.35,0.4}
@@ -3109,3 +3109,122 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_ponttud", V )
+
+local V = {
+	Name = "Falconer",
+	Model = "models/mafia/blackha.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1520,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "blackha",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/blackha_wheel.mdl",
+		CustomWheelPosFL = Vector(72,25,-2),
+		CustomWheelPosFR = Vector(72,-36,-2),
+		CustomWheelPosRL = Vector(-59,25,-2),
+		CustomWheelPosRR = Vector(-59,-36,-2),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-19,-9,45),
+		SeatPitch = 2,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-10,-16,15),
+				ang = Angle(0,-90,15)
+			},
+			{
+				pos = Vector(-45,-16,13),
+				ang = Angle(0,-90,15)
+			},
+			{
+				pos = Vector(-45,9,13),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-90,-20,0),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 3,
+		FrontConstant = 28000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 2,
+		RearConstant = 28000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 28,
+		Efficiency = 0.8,
+		GripOffset = -2,
+		BrakePower = 18,
+		
+		IdleRPM = 600,
+		LimitRPM = 4500,
+		PeakTorque = 90,
+		PowerbandStart = 700,
+		PowerbandEnd = 4300,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(20,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 30,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/black_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/black_1.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/black_1.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/black_3.wav",
+		Sound_ThrottlePitch = 2,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn9.wav",
+		
+		DifferentialGear = 0.6,
+		Gears = {-0.15,0,0.11,0.2,0.25,0.32}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_blackha", V )
