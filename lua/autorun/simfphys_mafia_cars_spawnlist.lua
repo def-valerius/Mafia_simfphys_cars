@@ -2760,3 +2760,114 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_bugatti", V )
+
+local V = {
+	Name = "Celeste Marque 500",
+	Model = "models/mafia/merced500K.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1200,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "merced500k",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/merced500K_wheel.mdl",
+		CustomWheelPosFL = Vector(80,30,4),
+		CustomWheelPosFR = Vector(80,-30,4),
+		CustomWheelPosRL = Vector(-51,30,4),
+		CustomWheelPosRR = Vector(-51,-30,4),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-20,-12,42),
+		SeatPitch = -10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-16,-12,10),
+				ang = Angle(0,-90,20)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-90,-10,5),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 3,
+		FrontConstant = 20000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 2,
+		RearConstant = 20000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 28,
+		Efficiency = 0.8,
+		GripOffset = -2,
+		BrakePower = 18,
+		
+		IdleRPM = 800,
+		LimitRPM = 7300,
+		PeakTorque = 100,
+		PowerbandStart = 900,
+		PowerbandEnd = 7000,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-50,0,40),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 40,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/merc_x.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/merc_0.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/merc_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/merc_4.wav",
+		Sound_ThrottlePitch = 0.8,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn9.wav",
+		
+		DifferentialGear = 0.5,
+		Gears = {-0.15,0,0.12,0.25,0.35,0.4}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_merced500k", V )
