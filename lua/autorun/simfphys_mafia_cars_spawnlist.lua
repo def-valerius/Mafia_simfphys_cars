@@ -2871,3 +2871,241 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_merced500k", V )
+
+local V = {
+	Name = "Crusader Chromim Fordor",
+	Model = "models/mafia/pontfor.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1500,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "pontfor",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/pont_wheel.mdl",
+		CustomWheelPosFL = Vector(75,30,0),
+		CustomWheelPosFR = Vector(75,-33,0),
+		CustomWheelPosRL = Vector(-58,30,0),
+		CustomWheelPosRR = Vector(-58,-33,0),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-8,-10,47),
+		SeatPitch = 2,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(0,-12,15),
+				ang = Angle(0,-90,15)
+			},
+			{
+				pos = Vector(-37,-12,13),
+				ang = Angle(0,-90,15)
+			},
+			{
+				pos = Vector(-37,12,13),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-95,10,5),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 3,
+		FrontConstant = 20000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 2,
+		RearConstant = 20000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 32,
+		Efficiency = 0.8,
+		GripOffset = -2,
+		BrakePower = 18,
+		
+		IdleRPM = 800,
+		LimitRPM = 6800,
+		PeakTorque = 95,
+		PowerbandStart = 900,
+		PowerbandEnd = 6600,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-70,0,20),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 40,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/pontiac_x.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/pontiac_1.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/pontiac_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/pontiac_2.wav",
+		Sound_ThrottlePitch = 1.5,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn9.wav",
+		
+		DifferentialGear = 0.55,
+		Gears = {-0.15,0,0.12,0.25,0.35}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_pontfor", V )
+
+local V = {
+	Name = "Crusader Chromim Tudor",
+	Model = "models/mafia/ponttud.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1500,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "ponttud",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/pont_wheel.mdl",
+		CustomWheelPosFL = Vector(69,30,0),
+		CustomWheelPosFR = Vector(69,-33,0),
+		CustomWheelPosRL = Vector(-60,30,0),
+		CustomWheelPosRR = Vector(-60,-33,0),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-17,-10,46),
+		SeatPitch = 2,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-10,-12,15),
+				ang = Angle(0,-90,15)
+			},
+			{
+				pos = Vector(-53,-12,13),
+				ang = Angle(0,-90,15)
+			},
+			{
+				pos = Vector(-53,12,13),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-95,10,5),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 3,
+		FrontConstant = 20000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 2,
+		RearConstant = 20000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 32,
+		Efficiency = 0.8,
+		GripOffset = -2,
+		BrakePower = 18,
+		
+		IdleRPM = 800,
+		LimitRPM = 6800,
+		PeakTorque = 95,
+		PowerbandStart = 900,
+		PowerbandEnd = 6600,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-70,0,20),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 40,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/pontiac_x.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/pontiac_1.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/pontiac_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/pontiac_2.wav",
+		Sound_ThrottlePitch = 1.5,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn9.wav",
+		
+		DifferentialGear = 0.55,
+		Gears = {-0.15,0,0.12,0.25,0.35}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_ponttud", V )
