@@ -3811,3 +3811,696 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_hudtu", V )
+
+local V = {
+	Name = "Lassiter V16 Fordor",
+	Model = "models/mafia/cad_ford.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 2812,
+		
+		EnginePos = Vector(70,0,28),
+		
+		LightsTable = "cad_ford",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/cad_ford_wheel.mdl",
+		CustomWheelPosFL = Vector(100,31,2),
+		CustomWheelPosFR = Vector(100,-31,2),
+		CustomWheelPosRL = Vector(-75,31,2),
+		CustomWheelPosRR = Vector(-75,-31,2),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-22,-14,47),
+		SeatPitch = 2,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-12,-16,14),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-50,-19,13),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-50,0,13),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-50,19,13),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-110,-20,0),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 6,
+		FrontConstant = 38000,
+		FrontDamping = 1200,
+		FrontRelativeDamping = 1200,
+		
+		RearHeight = 4,
+		RearConstant = 38000,
+		RearDamping = 1200,
+		RearRelativeDamping = 1200,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 40,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 6100,
+		PeakTorque = 160,
+		PowerbandStart = 800,
+		PowerbandEnd = 5900,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(30,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 42,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/cad_x.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/cad_0.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/cad_1.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/cad_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn14.wav",
+		
+		DifferentialGear = 0.58,
+		Gears = {-0.15,0,0.13,0.26,0.36}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_cad_ford", V )
+
+local V = {
+	Name = "Lassiter V16 Phaeton",
+	Model = "models/mafia/cad_phaeton.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 2650,
+		
+		EnginePos = Vector(70,0,28),
+		
+		LightsTable = "cad_phaeton",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/cad_ford_wheel.mdl",
+		CustomWheelPosFL = Vector(80,31,3),
+		CustomWheelPosFR = Vector(80,-31,3),
+		CustomWheelPosRL = Vector(-95,31,3),
+		CustomWheelPosRR = Vector(-95,-31,3),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-30,-14,44),
+		SeatPitch = 2,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-17,-16,14),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-66,-19,13),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-66,0,13),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-66,19,13),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-110,-20,0),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 6,
+		FrontConstant = 38000,
+		FrontDamping = 1200,
+		FrontRelativeDamping = 1200,
+		
+		RearHeight = 4,
+		RearConstant = 38000,
+		RearDamping = 1200,
+		RearRelativeDamping = 1200,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 38,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 6100,
+		PeakTorque = 130,
+		PowerbandStart = 800,
+		PowerbandEnd = 5900,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(10,0,40),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 42,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/cad_x.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/cad_0.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/cad_1.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/cad_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn14.wav",
+		
+		DifferentialGear = 0.57,
+		Gears = {-0.15,0,0.13,0.25,0.34}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_cad_phaeton", V )
+
+local V = {
+	Name = "Lassiter V16 Police",
+	Model = "models/mafia/polcad.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 2812,
+		
+		EnginePos = Vector(70,0,28),
+		
+		LightsTable = "polcad",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/cad_ford_wheel.mdl",
+		CustomWheelPosFL = Vector(100,31,2),
+		CustomWheelPosFR = Vector(100,-31,2),
+		CustomWheelPosRL = Vector(-75,31,2),
+		CustomWheelPosRR = Vector(-75,-31,2),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-22,-14,47),
+		SeatPitch = 2,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-12,-16,14),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-50,-19,13),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-50,0,13),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-50,19,13),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-110,-20,0),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 6,
+		FrontConstant = 38000,
+		FrontDamping = 1200,
+		FrontRelativeDamping = 1200,
+		
+		RearHeight = 4,
+		RearConstant = 38000,
+		RearDamping = 1200,
+		RearRelativeDamping = 1200,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 40,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 6100,
+		PeakTorque = 160,
+		PowerbandStart = 800,
+		PowerbandEnd = 5900,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(30,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 42,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/cad_x.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/cad_0.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/cad_1.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/cad_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn14.wav",
+		
+		DifferentialGear = 0.58,
+		Gears = {-0.15,0,0.13,0.26,0.36}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_polcad", V )
+
+local V = {
+	Name = "Lassiter V16 Roadster",
+	Model = "models/mafia/cad_road.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 2500,
+		
+		EnginePos = Vector(70,0,28),
+		
+		LightsTable = "cad_road",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/cad_ford_wheel.mdl",
+		CustomWheelPosFL = Vector(72,31,7),
+		CustomWheelPosFR = Vector(72,-31,7),
+		CustomWheelPosRL = Vector(-100,31,7),
+		CustomWheelPosRR = Vector(-100,-31,7),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-40,-14,47),
+		SeatPitch = 2,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-27,-16,15),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-110,-20,0),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 6,
+		FrontConstant = 38000,
+		FrontDamping = 1200,
+		FrontRelativeDamping = 1200,
+		
+		RearHeight = 4,
+		RearConstant = 38000,
+		RearDamping = 1200,
+		RearRelativeDamping = 1200,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 38,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 6100,
+		PeakTorque = 140,
+		PowerbandStart = 800,
+		PowerbandEnd = 5900,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(10,0,40),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 42,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/cad_x.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/cad_0.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/cad_1.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/cad_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn14.wav",
+		
+		DifferentialGear = 0.58,
+		Gears = {-0.15,0,0.13,0.25,0.34}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_cad_road", V )
+
+local V = {
+	Name = "Lassiter V16 Charon",
+	Model = "models/mafia/hearseca.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 2650,
+		
+		EnginePos = Vector(70,0,28),
+		
+		LightsTable = "hearseca",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/cad_ford_wheel.mdl",
+		CustomWheelPosFL = Vector(85,28,-2),
+		CustomWheelPosFR = Vector(85,-28,-2),
+		CustomWheelPosRL = Vector(-80,28,-4),
+		CustomWheelPosRR = Vector(-80,-28,-4),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-12,-11,37),
+		SeatPitch = 2,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(0,-12,5),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-110,-20,0),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 6,
+		FrontConstant = 38000,
+		FrontDamping = 1200,
+		FrontRelativeDamping = 1200,
+		
+		RearHeight = 4,
+		RearConstant = 38000,
+		RearDamping = 1200,
+		RearRelativeDamping = 1200,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 38,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 6100,
+		PeakTorque = 140,
+		PowerbandStart = 800,
+		PowerbandEnd = 5900,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(30,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 42,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/cad_x.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/cad_0.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/cad_1.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/cad_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn14.wav",
+		
+		DifferentialGear = 0.58,
+		Gears = {-0.15,0,0.13,0.25,0.34}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_hearseca", V )
+
+local V = {
+	Name = "Lassiter V16 Appolyon",
+	Model = "models/mafia/hartmann.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 2500,
+		
+		EnginePos = Vector(70,0,28),
+		
+		LightsTable = "hartmann",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/hartmann_wheel.mdl",
+		CustomWheelPosFL = Vector(72,30,14),
+		CustomWheelPosFR = Vector(72,-30,14),
+		CustomWheelPosRL = Vector(-90,31,14),
+		CustomWheelPosRR = Vector(-90,-31,14),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 27,
+		
+		SeatOffset = Vector(-25,-11,52),
+		SeatPitch = 2,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-17,-12,22),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-120,0,0),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 6,
+		FrontConstant = 38000,
+		FrontDamping = 1200,
+		FrontRelativeDamping = 1200,
+		
+		RearHeight = 4,
+		RearConstant = 38000,
+		RearDamping = 1200,
+		RearRelativeDamping = 1200,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 38,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 6100,
+		PeakTorque = 154,
+		PowerbandStart = 800,
+		PowerbandEnd = 5900,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-105,15,42),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 42,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/cad_x.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/cad_0.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/cad_1.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/cad_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn14.wav",
+		
+		DifferentialGear = 0.58,
+		Gears = {-0.15,0,0.13,0.26,0.38}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_hartmann", V )
