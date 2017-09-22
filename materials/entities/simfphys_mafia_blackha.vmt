@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "entities/simfphys_mafia_blackha"
+	"$nolod" 1
+	"$vertexalpha" 1
+	"$vertexcolor" 1
+}
