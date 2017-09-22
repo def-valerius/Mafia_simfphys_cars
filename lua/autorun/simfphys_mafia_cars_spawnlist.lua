@@ -3466,3 +3466,348 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_black", V )
+
+local V = {
+	Name = "Guardian Terraplane Coupe",
+	Model = "models/mafia/hudcou.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1316,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "hudcou",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/hud_wheel.mdl",
+		CustomWheelPosFL = Vector(85,30,4),
+		CustomWheelPosFR = Vector(85,-31,4),
+		CustomWheelPosRL = Vector(-52,28,4),
+		CustomWheelPosRR = Vector(-52,-29,4),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-10,-13,46),
+		SeatPitch = 2,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(1,-16,15),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-90,-20,0),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 3,
+		FrontConstant = 28000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 2,
+		RearConstant = 28000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 29,
+		Efficiency = 0.9,
+		GripOffset = -2,
+		BrakePower = 18,
+		
+		IdleRPM = 600,
+		LimitRPM = 5200,
+		PeakTorque = 110,
+		PowerbandStart = 700,
+		PowerbandEnd = 5000,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-65,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 38,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/hudson_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/hudson_x.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/hudson_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/hudson_2.wav",
+		Sound_ThrottlePitch = 2,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn9.wav",
+		
+		DifferentialGear = 0.57,
+		Gears = {-0.15,0,0.13,0.25,0.4}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_hudcou", V )
+
+local V = {
+	Name = "Guardian Terraplane Fordor",
+	Model = "models/mafia/hudfor.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1316,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "hudfor",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/hud_wheel.mdl",
+		CustomWheelPosFL = Vector(81,30,4),
+		CustomWheelPosFR = Vector(81,-31,4),
+		CustomWheelPosRL = Vector(-57,30,4),
+		CustomWheelPosRR = Vector(-57,-31,4),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-10,-13,46),
+		SeatPitch = 2,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(1,-16,15),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-39,-16,13),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-39,16,13),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-90,-20,0),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 3,
+		FrontConstant = 28000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 2,
+		RearConstant = 28000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 29,
+		Efficiency = 0.9,
+		GripOffset = -2,
+		BrakePower = 18,
+		
+		IdleRPM = 600,
+		LimitRPM = 5200,
+		PeakTorque = 110,
+		PowerbandStart = 700,
+		PowerbandEnd = 5000,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-65,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 38,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/hudson_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/hudson_x.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/hudson_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/hudson_2.wav",
+		Sound_ThrottlePitch = 2,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn9.wav",
+		
+		DifferentialGear = 0.57,
+		Gears = {-0.15,0,0.13,0.25,0.4}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_hudfor", V )
+
+local V = {
+	Name = "Guardian Terraplane Tudor",
+	Model = "models/mafia/hudtu.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1316,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "hudfor",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/hud_wheel.mdl",
+		CustomWheelPosFL = Vector(84,30,6),
+		CustomWheelPosFR = Vector(84,-31,6),
+		CustomWheelPosRL = Vector(-52,30,6),
+		CustomWheelPosRR = Vector(-52,-31,6),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-10,-13,48),
+		SeatPitch = 2,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(1,-16,15),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-39,-16,13),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-39,16,13),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-90,-20,0),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 3,
+		FrontConstant = 28000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 2,
+		RearConstant = 28000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 29,
+		Efficiency = 0.9,
+		GripOffset = -2,
+		BrakePower = 18,
+		
+		IdleRPM = 600,
+		LimitRPM = 5200,
+		PeakTorque = 110,
+		PowerbandStart = 700,
+		PowerbandEnd = 5000,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-65,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 38,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/hudson_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/hudson_x.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/hudson_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/hudson_2.wav",
+		Sound_ThrottlePitch = 2,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn9.wav",
+		
+		DifferentialGear = 0.57,
+		Gears = {-0.15,0,0.13,0.25,0.4}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_hudtu", V )
