@@ -4504,3 +4504,122 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_hartmann", V )
+
+local V = {
+	Name = "Schubert Six",
+	Model = "models/mafia/chev.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1346,
+		
+		EnginePos = Vector(60,0,28),
+		
+		LightsTable = "chev",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/chev_wheel.mdl",
+		CustomWheelPosFL = Vector(73,30,0),
+		CustomWheelPosFR = Vector(73,-31,0),
+		CustomWheelPosRL = Vector(-53,30,0),
+		CustomWheelPosRR = Vector(-53,-31,0),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-15,-13,43),
+		SeatPitch = 2,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-4,-12,10),
+				ang = Angle(0,-90,15)
+			},
+			{
+				pos = Vector(-40,-12,10),
+				ang = Angle(0,-90,15)
+			},
+			{
+				pos = Vector(-40,12,10),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,-20,0),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 6,
+		FrontConstant = 31000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 1000,
+		
+		RearHeight = 4,
+		RearConstant = 31000,
+		RearDamping = 1000,
+		RearRelativeDamping = 1000,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 28,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 25,
+		
+		IdleRPM = 600,
+		LimitRPM = 4400,
+		PeakTorque = 80,
+		PowerbandStart = 700,
+		PowerbandEnd = 4200,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(30,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 42,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/cheve_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/cheve_x.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/cheve_1.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/cheve_2.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn9.wav",
+		
+		DifferentialGear = 0.57,
+		Gears = {-0.15,0,0.12,0.24,0.33}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_chev", V )
