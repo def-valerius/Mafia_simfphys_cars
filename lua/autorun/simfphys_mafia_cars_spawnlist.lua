@@ -5682,3 +5682,221 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_cordse", V )
+
+local V = {
+	Name = "Trautenberg Model J",
+	Model = "models/mafia/deusejco.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1700,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "deusejco",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/deusejco_wheel.mdl",
+		CustomWheelPosFL = Vector(76,32,9),
+		CustomWheelPosFR = Vector(76,-30,9),
+		CustomWheelPosRL = Vector(-85,32,9),
+		CustomWheelPosRR = Vector(-85,-30,9),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-45,-11,46),
+		SeatPitch = 5,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-28,-10,15),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,13,5),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 6,
+		FrontConstant = 30000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 1000,
+		
+		RearHeight = 4,
+		RearConstant = 30000,
+		RearDamping = 1000,
+		RearRelativeDamping = 1000,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 37,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 5600,
+		PeakTorque = 150,
+		PowerbandStart = 800,
+		PowerbandEnd = 5400,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-60,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 35,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/deu_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/deu_1.wav",
+		Sound_MidPitch = 0.6,
+		Sound_MidVolume = 4,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/deu_1.wav",
+		Sound_HighPitch = 0.8,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/deu_11.wav",
+		Sound_ThrottlePitch = 0.6,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia/horn9.wav",
+		
+		DifferentialGear = 0.6,
+		Gears = {-0.15,0,0.13,0.26,0.4}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_deusejco", V )
+
+
+local V = {
+	Name = "Trautenberg Racer 4WD",
+	Model = "models/mafia/duesenberg.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,0),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 877,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "mafia_racer",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1,
+		
+		CustomWheelModel = "models/mafia/duesenberg_wheel.mdl",
+		CustomWheelPosFL = Vector(72,28,18),
+		CustomWheelPosFR = Vector(72,-27,18),
+		CustomWheelPosRL = Vector(-48,28,18),
+		CustomWheelPosRR = Vector(-48,-27,18),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-42,0,42),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-69,-13,28),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 28000,
+		FrontDamping = 400,
+		FrontRelativeDamping = 400,
+		
+		RearHeight = 6,
+		RearConstant = 28000,
+		RearDamping = 400,
+		RearRelativeDamping = 400,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 2,
+		
+		MaxGrip = 30,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 23,
+		
+		IdleRPM = 600,
+		LimitRPM = 7800,
+		PeakTorque = 120,
+		PowerbandStart = 800,
+		PowerbandEnd = 7600,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-50,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 30,
+		
+		PowerBias = 0.8,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/deu_x.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/deu_1.wav",
+		Sound_MidPitch = 0.9,
+		Sound_MidVolume = 10,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/deu_1.wav",
+		Sound_HighPitch = 1.1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/deu_2.wav",
+		Sound_ThrottlePitch = 0.9,
+		Sound_ThrottleVolume = 10,
+		
+		--
+		snd_horn = "mafia/horn4.wav",
+		
+		DifferentialGear = 0.6,
+		Gears = {-0.12,0,0.1,0.25,0.4}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_deusenberg", V )
