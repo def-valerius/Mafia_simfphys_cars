@@ -5218,3 +5218,122 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_polimtud", V )
+
+local V = {
+	Name = "Silver Fletcher",
+	Model = "models/mafia/arrow.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 2314,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "arrow",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/arrow_wheel.mdl",
+		CustomWheelPosFL = Vector(87,32,2),
+		CustomWheelPosFR = Vector(87,-34,2),
+		CustomWheelPosRL = Vector(-64,32,2),
+		CustomWheelPosRR = Vector(-64,-34,2),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-13,-15,43),
+		SeatPitch = 5,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(0,-14,12),
+				ang = Angle(0,-90,15)
+			},
+			{
+				pos = Vector(-45,-12,9),
+				ang = Angle(0,-90,15)
+			},
+			{
+				pos = Vector(-45,12,9),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,-20,0),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 6,
+		FrontConstant = 33000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 1000,
+		
+		RearHeight = 4,
+		RearConstant = 33000,
+		RearDamping = 1000,
+		RearRelativeDamping = 1000,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 37,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 5400,
+		PeakTorque = 160,
+		PowerbandStart = 850,
+		PowerbandEnd = 5200,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-70,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 38,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/arrow_x.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/arrow_1.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/arrow_2.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/arrow_3.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn14.wav",
+		
+		DifferentialGear = 0.62,
+		Gears = {-0.15,0,0.13,0.26,0.42}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_arrow", V )
