@@ -5337,3 +5337,348 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_arrow", V )
+
+local V = {
+	Name = "Thor 812 Cabriolet FWD",
+	Model = "models/mafia/cordca.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1814,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "cordca",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/cord_wheel.mdl",
+		CustomWheelPosFL = Vector(64,30,6),
+		CustomWheelPosFR = Vector(64,-32,6),
+		CustomWheelPosRL = Vector(-61,28,6),
+		CustomWheelPosRR = Vector(-61,-30,6),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-34,-10,42),
+		SeatPitch = 5,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-20,-14,12),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,13,5),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 6,
+		FrontConstant = 30000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 1000,
+		
+		RearHeight = 4,
+		RearConstant = 30000,
+		RearDamping = 1000,
+		RearRelativeDamping = 1000,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 37,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 5400,
+		PeakTorque = 130,
+		PowerbandStart = 850,
+		PowerbandEnd = 5200,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-60,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 35,
+		
+		PowerBias = -1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/cord_3.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/cord_x.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 4,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/cord_3.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/cord_2.wav",
+		Sound_ThrottlePitch = 0.8,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn9.wav",
+		
+		DifferentialGear = 0.6,
+		Gears = {-0.15,0,0.13,0.26,0.38,0.45}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_cordca", V )
+
+local V = {
+	Name = "Thor 810 Phaeton",
+	Model = "models/mafia/cordph.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1656,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "cordph",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/cord_wheel.mdl",
+		CustomWheelPosFL = Vector(73,28,9),
+		CustomWheelPosFR = Vector(73,-30,9),
+		CustomWheelPosRL = Vector(-61,27,9),
+		CustomWheelPosRR = Vector(-61,-29,9),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-18,-11,42),
+		SeatPitch = 5,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-10,-14,12),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-43,-14,9),
+				ang = Angle(0,-90,18)
+			},{
+				pos = Vector(-43,14,9),
+				ang = Angle(0,-90,18)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,13,5),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 6,
+		FrontConstant = 30000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 1000,
+		
+		RearHeight = 4,
+		RearConstant = 30000,
+		RearDamping = 1000,
+		RearRelativeDamping = 1000,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 37,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 5300,
+		PeakTorque = 110,
+		PowerbandStart = 850,
+		PowerbandEnd = 5100,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-60,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 35,
+		
+		PowerBias = -1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/cord_3.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/cord_x.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 4,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/cord_3.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/cord_2.wav",
+		Sound_ThrottlePitch = 0.6,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia/horn9.wav",
+		
+		DifferentialGear = 0.6,
+		Gears = {-0.15,0,0.13,0.26,0.37,0.43}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_cordph", V )
+
+local V = {
+	Name = "Thor 810 Sedan",
+	Model = "models/mafia/cordse.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1656,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "cordse",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/cord_wheel.mdl",
+		CustomWheelPosFL = Vector(80,29,9),
+		CustomWheelPosFR = Vector(80,-29,9),
+		CustomWheelPosRL = Vector(-57,27,9),
+		CustomWheelPosRR = Vector(-57,-27,9),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-12,-11,44),
+		SeatPitch = 5,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-4,-14,12),
+				ang = Angle(0,-90,15)
+			},{
+				pos = Vector(-37,-14,7),
+				ang = Angle(0,-90,18)
+			},{
+				pos = Vector(-37,14,7),
+				ang = Angle(0,-90,18)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,13,5),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 6,
+		FrontConstant = 30000,
+		FrontDamping = 1000,
+		FrontRelativeDamping = 1000,
+		
+		RearHeight = 4,
+		RearConstant = 30000,
+		RearDamping = 1000,
+		RearRelativeDamping = 1000,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 37,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 25,
+		
+		IdleRPM = 700,
+		LimitRPM = 5300,
+		PeakTorque = 110,
+		PowerbandStart = 850,
+		PowerbandEnd = 5100,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-60,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 35,
+		
+		PowerBias = -1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/cord_3.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/cord_x.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 4,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/cord_3.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/cord_2.wav",
+		Sound_ThrottlePitch = 0.6,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia/horn9.wav",
+		
+		DifferentialGear = 0.6,
+		Gears = {-0.15,0,0.13,0.26,0.37,0.43}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_cordse", V )
