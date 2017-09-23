@@ -6472,3 +6472,592 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_buigang", V )
+
+
+local V = {
+	Name = "Bolt Ambulance",
+	Model = "models/mafia/ambulance.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 950,
+		
+		EnginePos = Vector(50,0,28),
+		
+		LightsTable = "fordambulance",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/ForA_wheel.mdl",
+		CustomWheelPosFL = Vector(60,30,0),
+		CustomWheelPosFR = Vector(60,-31,0),
+		CustomWheelPosRL = Vector(-60,30,0),
+		CustomWheelPosRR = Vector(-60,-31,0),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-22,-12,40),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-10,-11,10),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-50,0,10),
+				ang = Angle(0,90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-90,-20,3),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 18000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 6,
+		RearConstant = 18000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 20,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 10,
+		
+		IdleRPM = 600,
+		LimitRPM = 2400,
+		PeakTorque = 70,
+		PowerbandStart = 800,
+		PowerbandEnd = 2100,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(20,0,10),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 18,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		
+		snd_pitch = 0.9,
+		snd_idle = "mafia/fordA1_NPC.wav",
+		
+		snd_low = "mafia/fordA1_NPC.wav",
+		snd_low_revdown = "mafia/fordA1_NPC.wav",
+		snd_low_pitch = 0.9,
+		
+		snd_mid = "mafia/fordA1_NPC.wav",
+		snd_mid_gearup = "mafia/fordA1_NPC.wav",
+		snd_mid_pitch = 0.9,
+		--
+		Sound_Idle = "mafia/fordA1_NPC.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/fordA1_NPC.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 1,
+		Sound_MidFadeOutRPMpercent = 70,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia/fordA1_NPC.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 70,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia/fordA1_NPC.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia/horn5.wav",
+		
+		DifferentialGear = 0.8,
+		Gears = {-0.12,0,0.1,0.3,0.5}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_fordambulance", V )
+
+local V = {
+	Name = "Bolt Hearse",
+	Model = "models/mafia/hearseA.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,30),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 950,
+		
+		EnginePos = Vector(100,0,0),
+		
+		LightsTable = "hearsea",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/hearsea_wheel.mdl",
+		CustomWheelPosFL = Vector(122,30,-30),
+		CustomWheelPosFR = Vector(122,-31,-30),
+		CustomWheelPosRL = Vector(-30,30,-30),
+		CustomWheelPosRR = Vector(-30,-31,-30),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(42,-10,17),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(52,-11,-26),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-70,-20,-35),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 8,
+		FrontConstant = 18000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 6,
+		RearConstant = 18000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 20,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 10,
+		
+		IdleRPM = 600,
+		LimitRPM = 2400,
+		PeakTorque = 70,
+		PowerbandStart = 800,
+		PowerbandEnd = 2100,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(20,0,10),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 18,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		
+		snd_pitch = 0.9,
+		snd_idle = "mafia/fordA1_NPC.wav",
+		
+		snd_low = "mafia/fordA1_NPC.wav",
+		snd_low_revdown = "mafia/fordA1_NPC.wav",
+		snd_low_pitch = 0.9,
+		
+		snd_mid = "mafia/fordA1_NPC.wav",
+		snd_mid_gearup = "mafia/fordA1_NPC.wav",
+		snd_mid_pitch = 0.9,
+		--
+		Sound_Idle = "mafia/fordA1_NPC.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/fordA1_NPC.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 1,
+		Sound_MidFadeOutRPMpercent = 70,
+		Sound_MidFadeOutRate = 0.5,
+		
+		Sound_High = "mafia/fordA1_NPC.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 70,
+		Sound_HighFadeInRate = 0.5,
+		
+		Sound_Throttle = "mafia/fordA1_NPC.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 1,
+		
+		--
+		snd_horn = "mafia/horn5.wav",
+		
+		DifferentialGear = 0.8,
+		Gears = {-0.12,0,0.1,0.3,0.5}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_hearsea", V )
+
+local V = {
+	Name = "Bolt Firetruck",
+	Model = "models/mafia/fire.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 3000,
+		
+		EnginePos = Vector(70,0,28),
+		
+		LightsTable = "fordfire",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/fire_front_wheel.mdl",
+		CustomWheelModel_R = "models/mafia/fire_rear_wheel.mdl",
+		CustomWheelPosFL = Vector(97,29,0),
+		CustomWheelPosFR = Vector(97,-31,0),
+		CustomWheelPosRL = Vector(-80,29,0),
+		CustomWheelPosRR = Vector(-80,-31,0),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(14,-8,40),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(29,-11,2),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-70,-10,34),
+				ang = Angle(0,0,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-120,-20,-2),
+				ang = Angle(90,165,0),
+			}
+		},
+		
+		FrontHeight = 12,
+		FrontConstant = 45000,
+		FrontDamping = 1400,
+		FrontRelativeDamping = 1400,
+		
+		RearHeight = 10,
+		RearConstant = 45000,
+		RearDamping = 1400,
+		RearRelativeDamping = 1400,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 36,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 30,
+		
+		IdleRPM = 600,
+		LimitRPM = 3400,
+		PeakTorque = 90,
+		PowerbandStart = 800,
+		PowerbandEnd = 3200,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(55,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 40,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/truck_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/truck_2.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/truck_3.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 6,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/truck_3.wav",
+		Sound_ThrottlePitch = 1.2,
+		Sound_ThrottleVolume = 8,
+		
+		--
+		snd_horn = "mafia/horn8.wav",
+		
+		DifferentialGear = 0.5,
+		Gears = {-0.12,0,0.10,0.28,0.44}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_fordfire", V )
+
+local V = {
+	Name = "Bolt Truck Flatbed",
+	Model = "models/mafia/trucka.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 3000,
+		
+		EnginePos = Vector(70,0,28),
+		
+		LightsTable = "trucka",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/truckA_f_wheel.mdl",
+		CustomWheelModel_R = "models/mafia/truckA_r_wheel.mdl",
+		CustomWheelPosFL = Vector(84,29,6),
+		CustomWheelPosFR = Vector(84,-32,6),
+		CustomWheelPosRL = Vector(-80,29,6),
+		CustomWheelPosRR = Vector(-80,-32,6),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-8,-10,54),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(10,-12,19),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-32,25,-2),
+				ang = Angle(90,165,45),
+			}
+		},
+		
+		FrontHeight = 12,
+		FrontConstant = 45000,
+		FrontDamping = 1400,
+		FrontRelativeDamping = 1400,
+		
+		RearHeight = 10,
+		RearConstant = 45000,
+		RearDamping = 1400,
+		RearRelativeDamping = 1400,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 36,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 30,
+		
+		IdleRPM = 600,
+		LimitRPM = 3400,
+		PeakTorque = 82,
+		PowerbandStart = 800,
+		PowerbandEnd = 3200,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-30,-20,20),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 40,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/truck_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/truck_2.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/truck_3.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 6,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/truck_3.wav",
+		Sound_ThrottlePitch = 1.2,
+		Sound_ThrottleVolume = 8,
+		
+		--
+		snd_horn = "mafia/horn8.wav",
+		
+		DifferentialGear = 0.5,
+		Gears = {-0.12,0,0.10,0.28,0.44}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_trucka", V )
+
+local V = {
+	Name = "Bolt Truck Covered",
+	Model = "models/mafia/truckb.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 3000,
+		
+		EnginePos = Vector(70,0,28),
+		
+		LightsTable = "truckb",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/truckA_f_wheel.mdl",
+		CustomWheelModel_R = "models/mafia/truckA_r_wheel.mdl",
+		CustomWheelPosFL = Vector(84,29,3),
+		CustomWheelPosFR = Vector(84,-32,3),
+		CustomWheelPosRL = Vector(-80,29,3),
+		CustomWheelPosRR = Vector(-80,-32,3),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-8,-10,54),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(10,-12,19),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-32,25,-2),
+				ang = Angle(90,165,45),
+			}
+		},
+		
+		FrontHeight = 12,
+		FrontConstant = 45000,
+		FrontDamping = 1400,
+		FrontRelativeDamping = 1400,
+		
+		RearHeight = 10,
+		RearConstant = 45000,
+		RearDamping = 1400,
+		RearRelativeDamping = 1400,
+		
+		FastSteeringAngle = 10,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 5,
+		
+		MaxGrip = 36,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 30,
+		
+		IdleRPM = 600,
+		LimitRPM = 3400,
+		PeakTorque = 82,
+		PowerbandStart = 800,
+		PowerbandEnd = 3200,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-30,-20,20),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 40,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/truck_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/truck_2.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/truck_3.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 6,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/truck_3.wav",
+		Sound_ThrottlePitch = 1.2,
+		Sound_ThrottleVolume = 8,
+		
+		--
+		snd_horn = "mafia/horn8.wav",
+		
+		DifferentialGear = 0.5,
+		Gears = {-0.12,0,0.10,0.28,0.44}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_truckb", V )
