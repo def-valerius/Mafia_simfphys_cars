@@ -7147,27 +7147,27 @@ local V = {
 		
 		EngineSoundPreset = 0,
 		--
-		Sound_Idle = "mafia/truck_0.wav",
+		Sound_Idle = "mafia/th_0.wav",
 		Sound_IdlePitch = 1,
 		
-		Sound_Mid = "mafia/truck_2.wav",
+		Sound_Mid = "mafia/th_2.wav",
 		Sound_MidPitch = 1,
 		Sound_MidVolume = 2,
 		Sound_MidFadeOutRPMpercent = 90,
 		Sound_MidFadeOutRate = 0.9,
 		
-		Sound_High = "mafia/truck_3.wav",
+		Sound_High = "mafia/th_3.wav",
 		Sound_HighPitch = 1,
 		Sound_HighVolume = 6,
 		Sound_HighFadeInRPMpercent = 90,
 		Sound_HighFadeInRate = 0.9,
 		
-		Sound_Throttle = "mafia/truck_3.wav",
+		Sound_Throttle = "mafia/th_4.wav",
 		Sound_ThrottlePitch = 1.2,
 		Sound_ThrottleVolume = 8,
 		
 		--
-		snd_horn = "mafia/horn8.wav",
+		snd_horn = "mafia/horn4.wav",
 		
 		DifferentialGear = 0.5,
 		Gears = {-0.12,0,0.10,0.28,0.44}
