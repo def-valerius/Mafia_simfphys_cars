@@ -7067,7 +7067,7 @@ local V = {
 	Name = "Black Dragon",
 	Model = "models/mafia/blackdragon.mdl",
 	Class = "gmod_sent_vehicle_fphysics_base",
-	Category = "Mafia",
+	Category = "Mafia Free Ride Extreme",
 	SpawnOffset = Vector(0,0,10),
 	SpawnAngleOffset = 90,
 
@@ -7083,65 +7083,69 @@ local V = {
 		
 		CustomWheelModel = "models/mafia/blackdragon_f_wheel.mdl",
 		CustomWheelModel_R = "models/mafia/blackdragon_r_wheel.mdl",
-		CustomWheelPosFL = Vector(84,29,3),
-		CustomWheelPosFR = Vector(84,-32,3),
-		CustomWheelPosRL = Vector(-80,29,3),
-		CustomWheelPosRR = Vector(-80,-32,3),
+		CustomWheelPosFL = Vector(55,33,10),
+		CustomWheelPosFR = Vector(55,-33,10),
+		CustomWheelPosRL = Vector(-60,33,10),
+		CustomWheelPosRR = Vector(-60,-33,10),
 		CustomWheelAngleOffset = Angle(0,90,0),
 		
 		CustomMassCenter = Vector(10,0,10),
 		
 		CustomSteerAngle = 30,
 		
-		SeatOffset = Vector(-8,-10,54),
-		SeatPitch = 10,
+		SeatOffset = Vector(-25,-11,48),
+		SeatPitch = -5,
 		SeatYaw = 90,
 		
 		PassengerSeats = {
 			{
-				pos = Vector(10,-12,19),
+				pos = Vector(-18,-11,15),
 				ang = Angle(0,-90,17)
 			}
 		},
 		
 		ExhaustPositions = {
 			{
-				pos = Vector(-32,25,-2),
-				ang = Angle(90,165,45),
+				pos = Vector(-88,13,13),
+				ang = Angle(60,180,0),
+			},
+			{
+				pos = Vector(-88,-13,13),
+				ang = Angle(60,180,0),
 			}
 		},
 		
-		FrontHeight = 12,
+		FrontHeight = 0,
 		FrontConstant = 28000,
 		FrontDamping = 1000,
 		FrontRelativeDamping = 1000,
 		
-		RearHeight = 10,
+		RearHeight = 0,
 		RearConstant = 28000,
 		RearDamping = 1000,
 		RearRelativeDamping = 1000,
 		
-		FastSteeringAngle = 10,
+		FastSteeringAngle = 16,
 		SteeringFadeFastSpeed = 535,
 		
-		TurnSpeed = 5,
+		TurnSpeed = 3,
 		
 		MaxGrip = 28,
 		Efficiency = 1,
 		GripOffset = -2,
 		BrakePower = 20,
 		
-		IdleRPM = 600,
-		LimitRPM = 3400,
-		PeakTorque = 82,
+		IdleRPM = 700,
+		LimitRPM = 8000,
+		PeakTorque = 180,
 		PowerbandStart = 800,
-		PowerbandEnd = 3200,
+		PowerbandEnd = 7800,
 		Turbocharged = false,
 		Supercharged = false,
 		
-		FuelFillPos = Vector(-30,-20,20),
+		FuelFillPos = Vector(-55,0,40),
 		FuelType = FUELTYPE_PETROL,
-		FuelTankSize = 40,
+		FuelTankSize = 30,
 		
 		PowerBias = 1,
 		
@@ -7154,13 +7158,13 @@ local V = {
 		Sound_MidPitch = 1,
 		Sound_MidVolume = 2,
 		Sound_MidFadeOutRPMpercent = 90,
-		Sound_MidFadeOutRate = 0.9,
+		Sound_MidFadeOutRate = 0.6,
 		
 		Sound_High = "mafia/th_3.wav",
 		Sound_HighPitch = 1,
 		Sound_HighVolume = 6,
 		Sound_HighFadeInRPMpercent = 90,
-		Sound_HighFadeInRate = 0.9,
+		Sound_HighFadeInRate = 0.7,
 		
 		Sound_Throttle = "mafia/th_4.wav",
 		Sound_ThrottlePitch = 1.2,
@@ -7169,8 +7173,8 @@ local V = {
 		--
 		snd_horn = "mafia/horn4.wav",
 		
-		DifferentialGear = 0.5,
-		Gears = {-0.12,0,0.10,0.28,0.44}
+		DifferentialGear = 0.60,
+		Gears = {-0.12,0,0.10,0.20,0.36,0.55}
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_blackdragon", V )
