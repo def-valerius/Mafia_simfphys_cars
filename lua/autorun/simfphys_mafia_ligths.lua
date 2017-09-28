@@ -2993,3 +2993,56 @@ local light_table = {
 
 }
 list.Set( "simfphys_lights", "chevroletm6H", light_table)
+
+local light_table = {
+	L_HeadLampPos = Vector( 76, 20, 31 ),
+	L_HeadLampAng = Angle(0,0,0),
+	R_HeadLampPos = Vector( 76, -20, 31 ),
+	R_HeadLampAng = Angle(0,0,0),
+	
+	L_RearLampPos = Vector(-90,24,14),
+	L_RearLampAng = Angle(0,0,0),
+	R_RearLampPos = Vector(-90,-24,14),
+	R_RearLampAng = Angle(0,0,0),
+	
+	Headlight_sprites = {
+		{pos = Vector( 90, 13, 12 ),material = "sprites/light_ignorez",size = 70, color = Color( 220,205,160,120)},
+		{pos = Vector( 90, -13, 12 ),material = "sprites/light_ignorez",size = 70, color = Color( 220,205,160,120)},
+		
+	},
+	Headlamp_sprites = {
+		{pos = Vector( 76, 20, 31 ),material = "sprites/light_ignorez",size = 100, color = Color( 220,205,160,150)},
+		{pos = Vector( 76, -20, 31 ),material = "sprites/light_ignorez",size = 100, color = Color( 220,205,160,150)},
+		},
+	Rearlight_sprites = {
+		{pos = Vector(-90,24,14),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  150)},
+		{pos = Vector(-90,-24,14),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  150)},
+	},
+	Brakelight_sprites = {
+		{pos = Vector(-90,24,14),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  150)},
+		{pos = Vector(-90,-24,14),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  150)},
+	},
+	Reverselight_sprites = {
+		{pos = Vector(-90,22,14),material = "sprites/light_ignorez",size = 25,color = Color( 255, 255, 255, 150)},
+		{pos = Vector(-90,-22,14),material = "sprites/light_ignorez",size = 25,color = Color( 255, 255, 255, 150)},
+	},
+	
+	DelayOn = 0.1,
+	DelayOff = 0.1,
+	
+	Turnsignal_sprites = {
+		Left = {
+			Vector(-90,24,14),
+			Vector( 70, 28, 29 ),
+			{pos = Vector(-90,24,14),material = "sprites/light_ignorez",size = 55,color = Color( 255, 0, 0,  165)},
+		},
+		Right = {
+			Vector(-90,-24,14),
+			Vector( 70, -28, 29 ),
+			{pos = Vector(-90,-24,14),material = "sprites/light_ignorez",size = 55,color = Color( 255, 0, 0,  165)},
+		},
+	}
+	
+
+}
+list.Set( "simfphys_lights", "hotrodp2", light_table)
