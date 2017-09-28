@@ -7178,3 +7178,135 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_blackdragon", V )
+
+local V = {
+	Name = "Black Metal",
+	Model = "models/mafia/chevroletm6H.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia Free Ride Extreme",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 7000,
+		
+		EnginePos = Vector(70,0,28),
+		
+		LightsTable = "chevroletm6H",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 0,
+		
+		CustomWheelModel = "models/mafia/chevroletm6H_f_wheel.mdl",
+		CustomWheelModel_R = "models/mafia/chevroletm6H_r_wheel.mdl",
+		CustomWheelPosFL = Vector(75,33,10),
+		CustomWheelPosFR = Vector(75,-33,10),
+		CustomWheelPosRL = Vector(-55,29,10),
+		CustomWheelPosRR = Vector(-55,-29,10),
+		CustomWheelAngleOffset = Angle(0,270,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-5,-10,44),
+		SeatPitch = -5,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(0,-12,11),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-40,-12,11),
+				ang = Angle(0,-90,17)
+			},
+			{
+				pos = Vector(-40,12,11),
+				ang = Angle(0,-90,17)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-88,13,9),
+				ang = Angle(95,180,0),
+			},
+			{
+				pos = Vector(-88,17,9),
+				ang = Angle(95,180,0),
+			},
+			{
+				pos = Vector(-88,-13,9),
+				ang = Angle(95,180,0),
+			},
+			{
+				pos = Vector(-88,-17,9),
+				ang = Angle(95,180,0),
+			}
+		},
+		
+		FrontHeight = 26,
+		FrontConstant = 50000,
+		FrontDamping = 20000,
+		FrontRelativeDamping = 20000,
+		
+		RearHeight = 20,
+		RearConstant = 50000,
+		RearDamping = 10000,
+		RearRelativeDamping = 10000,
+		
+		FastSteeringAngle = 20,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 2,
+		
+		MaxGrip = 100,
+		Efficiency = 2,
+		GripOffset = -2,
+		BrakePower = 80,
+		
+		IdleRPM = 700,
+		LimitRPM = 5000,
+		PeakTorque = 250,
+		PowerbandStart = 800,
+		PowerbandEnd = 4800,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-55,0,30),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 50,
+		
+		PowerBias = -0.8,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/chev6_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/chev6_1.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 6,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.9,
+		
+		Sound_High = "mafia/cheve_npc.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 1,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.9,
+		
+		Sound_Throttle = "mafia/chev6_2.wav",
+		Sound_ThrottlePitch = 1,
+		Sound_ThrottleVolume = 6,
+		
+		--
+		snd_horn = "mafia/horn4.wav",
+		
+		DifferentialGear = 0.60,
+		Gears = {-0.12,0,0.13,0.20,0.36}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_chevroletm6H", V )
