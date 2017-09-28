@@ -7306,7 +7306,9 @@ local V = {
 		snd_horn = "mafia/horn4.wav",
 		
 		DifferentialGear = 0.60,
-		Gears = {-0.12,0,0.13,0.20,0.36}
+		Gears = {-0.12,0,0.13,0.20,0.36},
+		IsArmored = true,
+		MaxHealth = 7666
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_chevroletm6H", V )
