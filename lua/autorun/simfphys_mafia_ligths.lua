@@ -3251,3 +3251,4 @@ local light_table = {
 
 }
 list.Set( "simfphys_lights", "hotrodp3", light_table)
+

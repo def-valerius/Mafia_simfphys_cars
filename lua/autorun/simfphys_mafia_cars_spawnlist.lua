@@ -2225,7 +2225,7 @@ local V = {
 		LightsTable = "mafia_racer",
 		
 		CustomWheels = true,
-		CustomSuspensionTravel = 1,
+		CustomSuspensionTravel = 5,
 		
 		CustomWheelModel = "models/mafia/miller_wheel.mdl",
 		CustomWheelPosFL = Vector(60,26,18),
@@ -2253,13 +2253,13 @@ local V = {
 		
 		FrontHeight = 8,
 		FrontConstant = 30000,
-		FrontDamping = 400,
-		FrontRelativeDamping = 400,
+		FrontDamping = 800,
+		FrontRelativeDamping = 800,
 		
 		RearHeight = 6,
 		RearConstant = 30000,
-		RearDamping = 400,
-		RearRelativeDamping = 400,
+		RearDamping = 800,
+		RearRelativeDamping = 800,
 		
 		FastSteeringAngle = 10,
 		SteeringFadeFastSpeed = 535,
@@ -2283,7 +2283,7 @@ local V = {
 		FuelType = FUELTYPE_PETROL,
 		FuelTankSize = 30,
 		
-		PowerBias = 0.8,
+		PowerBias = 0.7,
 		
 		EngineSoundPreset = 0,
 		--
@@ -2470,13 +2470,13 @@ local V = {
 		
 		FrontHeight = 8,
 		FrontConstant = 17000,
-		FrontDamping = 300,
-		FrontRelativeDamping = 300,
+		FrontDamping = 700,
+		FrontRelativeDamping = 700,
 		
 		RearHeight = 6,
 		RearConstant = 17000,
-		RearDamping = 300,
-		RearRelativeDamping = 300,
+		RearDamping = 700,
+		RearRelativeDamping = 700,
 		
 		FastSteeringAngle = 10,
 		SteeringFadeFastSpeed = 535,
@@ -2687,13 +2687,13 @@ local V = {
 		
 		FrontHeight = 8,
 		FrontConstant = 30000,
-		FrontDamping = 400,
-		FrontRelativeDamping = 400,
+		FrontDamping = 700,
+		FrontRelativeDamping = 700,
 		
 		RearHeight = 6,
 		RearConstant = 30000,
-		RearDamping = 400,
-		RearRelativeDamping = 400,
+		RearDamping = 700,
+		RearRelativeDamping = 700,
 		
 		FastSteeringAngle = 10,
 		SteeringFadeFastSpeed = 535,
@@ -2717,7 +2717,7 @@ local V = {
 		FuelType = FUELTYPE_PETROL,
 		FuelTankSize = 30,
 		
-		PowerBias = 0.85,
+		PowerBias = 0.72,
 		
 		EngineSoundPreset = 0,
 		--
@@ -5826,13 +5826,13 @@ local V = {
 		
 		FrontHeight = 8,
 		FrontConstant = 28000,
-		FrontDamping = 400,
-		FrontRelativeDamping = 400,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
 		
 		RearHeight = 6,
 		RearConstant = 28000,
-		RearDamping = 400,
-		RearRelativeDamping = 400,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
 		
 		FastSteeringAngle = 10,
 		SteeringFadeFastSpeed = 535,
@@ -7659,7 +7659,7 @@ local V = {
 	Members = {
 		Mass = 800,
 		
-		EnginePos = Vector(70,0,28),
+		EnginePos = Vector(20,0,28),
 		
 		LightsTable = "fordTH",
 		
@@ -7775,7 +7775,7 @@ local V = {
 	Members = {
 		Mass = 900,
 		
-		EnginePos = Vector(70,0,28),
+		EnginePos = Vector(20,0,28),
 		
 		LightsTable = "hotrodp3",
 		
@@ -7879,3 +7879,108 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_hotrodp3", V )
+
+local V = {
+	Name = "Flame Spear",
+	Model = "models/mafia/hotrodp6.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia Free Ride Extreme",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 950,
+		
+		EnginePos = Vector(70,0,28),
+		
+		LightsTable = "mafia_racer",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/hotrodp6_wheel.mdl",
+		CustomWheelPosFL = Vector(106,26,6),
+		CustomWheelPosFR = Vector(106,-26,6),
+		CustomWheelPosRL = Vector(-16,27,6),
+		CustomWheelPosRR = Vector(-16,-27,6),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(0,0,46),
+		SeatPitch = -5,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			
+		},
+		
+		ExhaustPositions = {
+			
+		},
+		
+		FrontHeight = 0,
+		FrontConstant = 24000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 0,
+		RearConstant = 24000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 16,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 3,
+		
+		MaxGrip = 28,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 20,
+		
+		IdleRPM = 700,
+		LimitRPM = 7900,
+		PeakTorque = 150,
+		PowerbandStart = 800,
+		PowerbandEnd = 7600,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(20,0,40),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 45,
+		
+		PowerBias = 0.4,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/jet_0.wav",
+		Sound_IdlePitch = 1.3,
+		
+		Sound_Mid = "mafia/jet_2.wav",
+		Sound_MidPitch = 0.6,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.6,
+		
+		Sound_High = "mafia/jet_x.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 4,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.7,
+		
+		Sound_Throttle = "mafia/jet_3.wav",
+		Sound_ThrottlePitch = 0.9,
+		Sound_ThrottleVolume = 3,
+		
+		--
+		snd_horn = "mafia/horn4.wav",
+		
+		DifferentialGear = 0.6,
+		Gears = {-0.12,0,0.12,0.24,0.39}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_hotrodp6", V )
