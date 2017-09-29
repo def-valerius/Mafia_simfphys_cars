@@ -80,18 +80,6 @@ local V = {
 		PowerBias = 1,
 		
 		EngineSoundPreset = 0,
-		
-		snd_pitch = 0.9,
-		snd_idle = "mafia/fordt_npc.wav",
-		
-		snd_low = "mafia/fordt_npc.wav",
-		snd_low_revdown = "mafia/fordt_npc.wav",
-		snd_low_pitch = 0.9,
-		
-		snd_mid = "mafia/fordt_npc.wav",
-		snd_mid_gearup = "mafia/fordt_npc.wav",
-		snd_mid_pitch = 0.9,
-		
 		--
 		Sound_Idle = "mafia/fordt_npc.wav",
 		Sound_IdlePitch = 1,
@@ -7543,3 +7531,351 @@ local V = {
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_Thunderbird", V )
+
+local V = {
+	Name = "Crazy Horse",
+	Model = "models/mafia/FThot.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia Free Ride Extreme",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 1300,
+		
+		EnginePos = Vector(70,0,28),
+		
+		LightsTable = "FThot",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 1,
+		
+		CustomWheelModel = "models/mafia/FThot_f_wheel.mdl",
+		CustomWheelModel_R = "models/mafia/FThot_r_wheel.mdl",
+		CustomWheelPosFL = Vector(54,30,2),
+		CustomWheelPosFR = Vector(54,-30,2),
+		CustomWheelPosRL = Vector(-41,30,2),
+		CustomWheelPosRR = Vector(-41,-30,2),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(-30,0,0),
+		
+		CustomSteerAngle = 22,
+		
+		SeatOffset = Vector(-18,-9,45),
+		SeatPitch = 10,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-5,-9,12),
+				ang = Angle(0,-90,12)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-61,15,16),
+				ang = Angle(90,180,0),
+			},
+			{
+				pos = Vector(-61,-15,16),
+				ang = Angle(90,180,0),
+			}
+		},
+		
+		FrontHeight = 0,
+		FrontConstant = 50000,
+		FrontDamping = 3000,
+		FrontRelativeDamping = 3000,
+		
+		RearHeight = 0,
+		RearConstant = 50000,
+		RearDamping = 3000,
+		RearRelativeDamping = 3000,
+		
+		FastSteeringAngle = 8,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 2,
+		
+		MaxGrip = 32,
+		Efficiency = 1,
+		GripOffset = 0,
+		BrakePower = 20,
+		
+		IdleRPM = 700,
+		LimitRPM = 8000,
+		PeakTorque = 220,
+		PowerbandStart = 800,
+		PowerbandEnd = 7800,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(30,0,20),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 30,
+		
+		PowerBias = 0.6,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/th_0.wav",
+		Sound_IdlePitch = 0.7,
+		
+		Sound_Mid = "mafia/fordt_npc.wav",
+		Sound_MidPitch = 0.8,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.6,
+		
+		Sound_High = "mafia/th_3.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 4,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.7,
+		
+		Sound_Throttle = "mafia/th_4.wav",
+		Sound_ThrottlePitch = 0.9,
+		Sound_ThrottleVolume = 3,
+		
+		--
+		snd_horn = "mafia/horn4.wav",
+		
+		DifferentialGear = 0.5,
+		Gears = {-0.12,0,0.08,0.22,0.38,0.6}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_FThot", V )
+
+local V = {
+	Name = "Demoniac",
+	Model = "models/mafia/fordTH.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia Free Ride Extreme",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 800,
+		
+		EnginePos = Vector(70,0,28),
+		
+		LightsTable = "fordTH",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/fordTH_f_wheel.mdl",
+		CustomWheelModel_R = "models/mafia/fordTH_r_wheel.mdl",
+		CustomWheelPosFL = Vector(49,25,8),
+		CustomWheelPosFR = Vector(49,-27,8),
+		CustomWheelPosRL = Vector(-53,30,8),
+		CustomWheelPosRR = Vector(-53,-32,8),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-40,1,50),
+		SeatPitch = -5,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-69,0,33),
+				ang = Angle(0,90,10)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-27,22,7),
+				ang = Angle(90,120,0),
+			},
+			{
+				pos = Vector(-27,-22,7),
+				ang = Angle(90,-120,0),
+			}
+		},
+		
+		FrontHeight = 0,
+		FrontConstant = 22000,
+		FrontDamping = 700,
+		FrontRelativeDamping = 700,
+		
+		RearHeight = 0,
+		RearConstant = 22000,
+		RearDamping = 700,
+		RearRelativeDamping = 700,
+		
+		FastSteeringAngle = 16,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 3,
+		
+		MaxGrip = 28,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 20,
+		
+		IdleRPM = 700,
+		LimitRPM = 7100,
+		PeakTorque = 160,
+		PowerbandStart = 800,
+		PowerbandEnd = 6900,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-70,0,40),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 30,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/th_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/th_1.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.6,
+		
+		Sound_High = "mafia/th_3.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 4,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.7,
+		
+		Sound_Throttle = "mafia/th_4.wav",
+		Sound_ThrottlePitch = 0.9,
+		Sound_ThrottleVolume = 3,
+		
+		--
+		snd_horn = "mafia/horn4.wav",
+		
+		DifferentialGear = 0.6,
+		Gears = {-0.12,0,0.12,0.28,0.38,0.5}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_fordTH", V )
+
+local V = {
+	Name = "Disorder",
+	Model = "models/mafia/hotrodp3.mdl",
+	Class = "gmod_sent_vehicle_fphysics_base",
+	Category = "Mafia Free Ride Extreme",
+	SpawnOffset = Vector(0,0,10),
+	SpawnAngleOffset = 90,
+
+	Members = {
+		Mass = 900,
+		
+		EnginePos = Vector(70,0,28),
+		
+		LightsTable = "hotrodp3",
+		
+		CustomWheels = true,
+		CustomSuspensionTravel = 5,
+		
+		CustomWheelModel = "models/mafia/hotrodp3_f_wheel.mdl",
+		CustomWheelModel_R = "models/mafia/hotrodp3_r_wheel.mdl",
+		CustomWheelPosFL = Vector(42,34,8),
+		CustomWheelPosFR = Vector(42,-34,8),
+		CustomWheelPosRL = Vector(-78,30,8),
+		CustomWheelPosRR = Vector(-78,-30,8),
+		CustomWheelAngleOffset = Angle(0,90,0),
+		
+		CustomMassCenter = Vector(10,0,10),
+		
+		CustomSteerAngle = 30,
+		
+		SeatOffset = Vector(-36,-9,52),
+		SeatPitch = -5,
+		SeatYaw = 90,
+		
+		PassengerSeats = {
+			{
+				pos = Vector(-30,-10,17),
+				ang = Angle(0,-90,15)
+			}
+		},
+		
+		ExhaustPositions = {
+			{
+				pos = Vector(-54,26,12),
+				ang = Angle(90,120,0),
+			},
+			{
+				pos = Vector(-54,-26,12),
+				ang = Angle(90,-120,0),
+			}
+		},
+		
+		FrontHeight = 0,
+		FrontConstant = 24000,
+		FrontDamping = 900,
+		FrontRelativeDamping = 900,
+		
+		RearHeight = 0,
+		RearConstant = 24000,
+		RearDamping = 900,
+		RearRelativeDamping = 900,
+		
+		FastSteeringAngle = 16,
+		SteeringFadeFastSpeed = 535,
+		
+		TurnSpeed = 3,
+		
+		MaxGrip = 28,
+		Efficiency = 1,
+		GripOffset = -2,
+		BrakePower = 20,
+		
+		IdleRPM = 700,
+		LimitRPM = 7100,
+		PeakTorque = 163,
+		PowerbandStart = 800,
+		PowerbandEnd = 6900,
+		Turbocharged = false,
+		Supercharged = false,
+		
+		FuelFillPos = Vector(-70,0,40),
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 30,
+		
+		PowerBias = 1,
+		
+		EngineSoundPreset = 0,
+		--
+		Sound_Idle = "mafia/th_0.wav",
+		Sound_IdlePitch = 1,
+		
+		Sound_Mid = "mafia/th_1.wav",
+		Sound_MidPitch = 1,
+		Sound_MidVolume = 2,
+		Sound_MidFadeOutRPMpercent = 90,
+		Sound_MidFadeOutRate = 0.6,
+		
+		Sound_High = "mafia/th_3.wav",
+		Sound_HighPitch = 1,
+		Sound_HighVolume = 4,
+		Sound_HighFadeInRPMpercent = 90,
+		Sound_HighFadeInRate = 0.7,
+		
+		Sound_Throttle = "mafia/th_4.wav",
+		Sound_ThrottlePitch = 0.9,
+		Sound_ThrottleVolume = 3,
+		
+		--
+		snd_horn = "mafia/horn4.wav",
+		
+		DifferentialGear = 0.6,
+		Gears = {-0.12,0,0.12,0.28,0.37,0.51}
+	}
+}
+list.Set( "simfphys_vehicles", "simfphys_mafia_hotrodp3", V )
