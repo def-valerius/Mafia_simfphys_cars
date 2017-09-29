@@ -3252,3 +3252,54 @@ local light_table = {
 }
 list.Set( "simfphys_lights", "hotrodp3", light_table)
 
+local light_table = {
+	L_HeadLampPos = Vector( 66, 14, 30 ),
+	L_HeadLampAng = Angle(0,0,0),
+	R_HeadLampPos = Vector( 66, -14, 30 ),
+	R_HeadLampAng = Angle(0,0,0),
+	
+	L_RearLampPos = Vector(-99,12,16),
+	L_RearLampAng = Angle(0,0,0),
+	R_RearLampPos = Vector(-99,-12,16),
+	R_RearLampAng = Angle(0,0,0),
+	
+	Headlight_sprites = {
+		{pos = Vector( 66, 14, 30 ),material = "sprites/light_ignorez",size = 70, color = Color( 220,205,160,120)},
+		{pos = Vector( 66, -14, 30 ),material = "sprites/light_ignorez",size = 70, color = Color( 220,205,160,120)},
+		
+	},
+	Headlamp_sprites = {
+		{pos = Vector( 66, 14, 30 ),material = "sprites/light_ignorez",size = 100, color = Color( 220,205,160,150)},
+		{pos = Vector( 66, -14, 30 ),material = "sprites/light_ignorez",size = 100, color = Color( 220,205,160,150)},
+		},
+	Rearlight_sprites = {
+		{pos = Vector(-99,12,16),material = "sprites/light_ignorez",size = 40,color = Color( 255, 0, 0,  150)},
+		{pos = Vector(-99,-12,16),material = "sprites/light_ignorez",size = 40,color = Color( 255, 0, 0,  150)},
+	},
+	Brakelight_sprites = {
+		{pos = Vector(-99,12,16),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  150)},
+		{pos = Vector(-99,-12,16),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  150)},
+	},
+	Reverselight_sprites = {
+		{pos = Vector(-99,15,16),material = "sprites/light_ignorez",size = 25,color = Color( 255, 255, 255, 150)},
+		{pos = Vector(-99,-15,16),material = "sprites/light_ignorez",size = 25,color = Color( 255, 255, 255, 150)},
+	},
+	
+	DelayOn = 0.1,
+	DelayOff = 0.1,
+	
+	Turnsignal_sprites = {
+		Left = {
+			Vector(-99,19,16),
+			{pos = Vector(-99,19,16),material = "sprites/light_ignorez",size = 55,color = Color( 255, 0, 0,  165)},
+		},
+		Right = {
+			Vector(-99,-19,16),
+			{pos = Vector(-99,-19,16),material = "sprites/light_ignorez",size = 55,color = Color( 255, 0, 0,  165)},
+		},
+	}
+	
+
+}
+list.Set( "simfphys_lights", "Flamer", light_table)
+
