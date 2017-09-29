@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "entities/simfphys_mafia_cord_sedanH"
+	"$nolod" 1
+	"$vertexalpha" 1
+	"$vertexcolor" 1
+}
