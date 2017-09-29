@@ -837,33 +837,23 @@ local V = {
 		
 		EngineSoundPreset = 0,
 		
-		snd_pitch = 0.9,
-		snd_idle = "mafia/fordA1_NPC.wav",
-		
-		snd_low = "mafia/fordA1_NPC.wav",
-		snd_low_revdown = "mafia/fordA1_NPC.wav",
-		snd_low_pitch = 0.9,
-		
-		snd_mid = "mafia/fordA1_NPC.wav",
-		snd_mid_gearup = "mafia/fordA1_NPC.wav",
-		snd_mid_pitch = 0.9,
 		--
-		Sound_Idle = "mafia/fordA1_NPC.wav",
+		Sound_Idle = "mafia/fordA_X.wav",
 		Sound_IdlePitch = 1,
 		
-		Sound_Mid = "mafia/fordA1_NPC.wav",
-		Sound_MidPitch = 1,
+		Sound_Mid = "mafia/fordA_1.wav",
+		Sound_MidPitch = 1.2,
 		Sound_MidVolume = 1,
 		Sound_MidFadeOutRPMpercent = 70,
 		Sound_MidFadeOutRate = 0.5,
 		
-		Sound_High = "mafia/fordA1_NPC.wav",
+		Sound_High = "mafia/fordA_2.wav",
 		Sound_HighPitch = 1,
 		Sound_HighVolume = 1,
 		Sound_HighFadeInRPMpercent = 70,
 		Sound_HighFadeInRate = 0.5,
 		
-		Sound_Throttle = "mafia/fordA1_NPC.wav",
+		Sound_Throttle = "mafia/fordA_3.wav",
 		Sound_ThrottlePitch = 1,
 		Sound_ThrottleVolume = 1,
 		
@@ -960,33 +950,23 @@ local V = {
 		
 		EngineSoundPreset = 0,
 		
-		snd_pitch = 0.9,
-		snd_idle = "mafia/fordA1_NPC.wav",
-		
-		snd_low = "mafia/fordA1_NPC.wav",
-		snd_low_revdown = "mafia/fordA1_NPC.wav",
-		snd_low_pitch = 0.9,
-		
-		snd_mid = "mafia/fordA1_NPC.wav",
-		snd_mid_gearup = "mafia/fordA1_NPC.wav",
-		snd_mid_pitch = 0.9,
 		--
-		Sound_Idle = "mafia/fordA1_NPC.wav",
+		Sound_Idle = "mafia/fordA_X.wav",
 		Sound_IdlePitch = 1,
 		
-		Sound_Mid = "mafia/fordA1_NPC.wav",
-		Sound_MidPitch = 1,
+		Sound_Mid = "mafia/fordA_1.wav",
+		Sound_MidPitch = 1.2,
 		Sound_MidVolume = 1,
 		Sound_MidFadeOutRPMpercent = 70,
 		Sound_MidFadeOutRate = 0.5,
 		
-		Sound_High = "mafia/fordA1_NPC.wav",
+		Sound_High = "mafia/fordA_2.wav",
 		Sound_HighPitch = 1,
 		Sound_HighVolume = 1,
 		Sound_HighFadeInRPMpercent = 70,
 		Sound_HighFadeInRate = 0.5,
 		
-		Sound_Throttle = "mafia/fordA1_NPC.wav",
+		Sound_Throttle = "mafia/fordA_3.wav",
 		Sound_ThrottlePitch = 1,
 		Sound_ThrottleVolume = 1,
 		
@@ -1085,34 +1065,23 @@ local V = {
 		PowerBias = 1,
 		
 		EngineSoundPreset = 0,
-		
-		snd_pitch = 0.9,
-		snd_idle = "mafia/fordA1_NPC.wav",
-		
-		snd_low = "mafia/fordA1_NPC.wav",
-		snd_low_revdown = "mafia/fordA1_NPC.wav",
-		snd_low_pitch = 0.9,
-		
-		snd_mid = "mafia/fordA1_NPC.wav",
-		snd_mid_gearup = "mafia/fordA1_NPC.wav",
-		snd_mid_pitch = 0.9,
 		--
-		Sound_Idle = "mafia/fordA1_NPC.wav",
+		Sound_Idle = "mafia/fordA_X.wav",
 		Sound_IdlePitch = 1,
 		
-		Sound_Mid = "mafia/fordA1_NPC.wav",
-		Sound_MidPitch = 1,
+		Sound_Mid = "mafia/fordA_1.wav",
+		Sound_MidPitch = 1.2,
 		Sound_MidVolume = 1,
 		Sound_MidFadeOutRPMpercent = 70,
 		Sound_MidFadeOutRate = 0.5,
 		
-		Sound_High = "mafia/fordA1_NPC.wav",
+		Sound_High = "mafia/fordA_2.wav",
 		Sound_HighPitch = 1,
 		Sound_HighVolume = 1,
 		Sound_HighFadeInRPMpercent = 70,
 		Sound_HighFadeInRate = 0.5,
 		
-		Sound_Throttle = "mafia/fordA1_NPC.wav",
+		Sound_Throttle = "mafia/fordA_3.wav",
 		Sound_ThrottlePitch = 1,
 		Sound_ThrottleVolume = 1,
 		
@@ -1216,33 +1185,23 @@ local V = {
 		
 		EngineSoundPreset = 0,
 		
-		snd_pitch = 0.9,
-		snd_idle = "mafia/fordA1_NPC.wav",
-		
-		snd_low = "mafia/fordA1_NPC.wav",
-		snd_low_revdown = "mafia/fordA1_NPC.wav",
-		snd_low_pitch = 0.9,
-		
-		snd_mid = "mafia/fordA1_NPC.wav",
-		snd_mid_gearup = "mafia/fordA1_NPC.wav",
-		snd_mid_pitch = 0.9,
 		--
-		Sound_Idle = "mafia/fordA1_NPC.wav",
+		Sound_Idle = "mafia/fordA_X.wav",
 		Sound_IdlePitch = 1,
 		
-		Sound_Mid = "mafia/fordA1_NPC.wav",
-		Sound_MidPitch = 1,
+		Sound_Mid = "mafia/fordA_1.wav",
+		Sound_MidPitch = 1.2,
 		Sound_MidVolume = 1,
 		Sound_MidFadeOutRPMpercent = 70,
 		Sound_MidFadeOutRate = 0.5,
 		
-		Sound_High = "mafia/fordA1_NPC.wav",
+		Sound_High = "mafia/fordA_2.wav",
 		Sound_HighPitch = 1,
 		Sound_HighVolume = 1,
 		Sound_HighFadeInRPMpercent = 70,
 		Sound_HighFadeInRate = 0.5,
 		
-		Sound_Throttle = "mafia/fordA1_NPC.wav",
+		Sound_Throttle = "mafia/fordA_3.wav",
 		Sound_ThrottlePitch = 1,
 		Sound_ThrottleVolume = 1,
 		
@@ -1342,33 +1301,23 @@ local V = {
 		
 		EngineSoundPreset = 0,
 		
-		snd_pitch = 0.9,
-		snd_idle = "mafia/fordA1_NPC.wav",
-		
-		snd_low = "mafia/fordA1_NPC.wav",
-		snd_low_revdown = "mafia/fordA1_NPC.wav",
-		snd_low_pitch = 0.9,
-		
-		snd_mid = "mafia/fordA1_NPC.wav",
-		snd_mid_gearup = "mafia/fordA1_NPC.wav",
-		snd_mid_pitch = 0.9,
 		--
-		Sound_Idle = "mafia/fordA1_NPC.wav",
+		Sound_Idle = "mafia/fordA_X.wav",
 		Sound_IdlePitch = 1,
 		
-		Sound_Mid = "mafia/fordA1_NPC.wav",
-		Sound_MidPitch = 1,
+		Sound_Mid = "mafia/fordA_1.wav",
+		Sound_MidPitch = 1.2,
 		Sound_MidVolume = 1,
 		Sound_MidFadeOutRPMpercent = 70,
 		Sound_MidFadeOutRate = 0.5,
 		
-		Sound_High = "mafia/fordA1_NPC.wav",
+		Sound_High = "mafia/fordA_2.wav",
 		Sound_HighPitch = 1,
 		Sound_HighVolume = 1,
 		Sound_HighFadeInRPMpercent = 70,
 		Sound_HighFadeInRate = 0.5,
 		
-		Sound_Throttle = "mafia/fordA1_NPC.wav",
+		Sound_Throttle = "mafia/fordA_3.wav",
 		Sound_ThrottlePitch = 1,
 		Sound_ThrottleVolume = 1,
 		
@@ -1464,33 +1413,23 @@ local V = {
 		
 		EngineSoundPreset = 0,
 		
-		snd_pitch = 0.9,
-		snd_idle = "mafia/fordA1_NPC.wav",
-		
-		snd_low = "mafia/fordA1_NPC.wav",
-		snd_low_revdown = "mafia/fordA1_NPC.wav",
-		snd_low_pitch = 0.9,
-		
-		snd_mid = "mafia/fordA1_NPC.wav",
-		snd_mid_gearup = "mafia/fordA1_NPC.wav",
-		snd_mid_pitch = 0.9,
 		--
-		Sound_Idle = "mafia/fordA1_NPC.wav",
+		Sound_Idle = "mafia/fordA_X.wav",
 		Sound_IdlePitch = 1,
 		
-		Sound_Mid = "mafia/fordA1_NPC.wav",
-		Sound_MidPitch = 1,
+		Sound_Mid = "mafia/fordA_1.wav",
+		Sound_MidPitch = 1.2,
 		Sound_MidVolume = 1,
 		Sound_MidFadeOutRPMpercent = 70,
 		Sound_MidFadeOutRate = 0.5,
 		
-		Sound_High = "mafia/fordA1_NPC.wav",
+		Sound_High = "mafia/fordA_2.wav",
 		Sound_HighPitch = 1,
 		Sound_HighVolume = 1,
 		Sound_HighFadeInRPMpercent = 70,
 		Sound_HighFadeInRate = 0.5,
 		
-		Sound_Throttle = "mafia/fordA1_NPC.wav",
+		Sound_Throttle = "mafia/fordA_3.wav",
 		Sound_ThrottlePitch = 1,
 		Sound_ThrottleVolume = 1,
 		
@@ -1594,33 +1533,23 @@ local V = {
 		
 		EngineSoundPreset = 0,
 		
-		snd_pitch = 0.9,
-		snd_idle = "mafia/fordA1_NPC.wav",
-		
-		snd_low = "mafia/fordA1_NPC.wav",
-		snd_low_revdown = "mafia/fordA1_NPC.wav",
-		snd_low_pitch = 0.9,
-		
-		snd_mid = "mafia/fordA1_NPC.wav",
-		snd_mid_gearup = "mafia/fordA1_NPC.wav",
-		snd_mid_pitch = 0.9,
 		--
-		Sound_Idle = "mafia/fordA1_NPC.wav",
+		Sound_Idle = "mafia/fordA_X.wav",
 		Sound_IdlePitch = 1,
 		
-		Sound_Mid = "mafia/fordA1_NPC.wav",
-		Sound_MidPitch = 1,
+		Sound_Mid = "mafia/fordA_1.wav",
+		Sound_MidPitch = 1.2,
 		Sound_MidVolume = 1,
 		Sound_MidFadeOutRPMpercent = 70,
 		Sound_MidFadeOutRate = 0.5,
 		
-		Sound_High = "mafia/fordA1_NPC.wav",
+		Sound_High = "mafia/fordA_2.wav",
 		Sound_HighPitch = 1,
 		Sound_HighVolume = 1,
 		Sound_HighFadeInRPMpercent = 70,
 		Sound_HighFadeInRate = 0.5,
 		
-		Sound_Throttle = "mafia/fordA1_NPC.wav",
+		Sound_Throttle = "mafia/fordA_3.wav",
 		Sound_ThrottlePitch = 1,
 		Sound_ThrottleVolume = 1,
 		
@@ -6549,33 +6478,23 @@ local V = {
 		
 		EngineSoundPreset = 0,
 		
-		snd_pitch = 0.9,
-		snd_idle = "mafia/fordA1_NPC.wav",
-		
-		snd_low = "mafia/fordA1_NPC.wav",
-		snd_low_revdown = "mafia/fordA1_NPC.wav",
-		snd_low_pitch = 0.9,
-		
-		snd_mid = "mafia/fordA1_NPC.wav",
-		snd_mid_gearup = "mafia/fordA1_NPC.wav",
-		snd_mid_pitch = 0.9,
 		--
-		Sound_Idle = "mafia/fordA1_NPC.wav",
+		Sound_Idle = "mafia/fordA_X.wav",
 		Sound_IdlePitch = 1,
 		
-		Sound_Mid = "mafia/fordA1_NPC.wav",
-		Sound_MidPitch = 1,
+		Sound_Mid = "mafia/fordA_1.wav",
+		Sound_MidPitch = 1.2,
 		Sound_MidVolume = 1,
 		Sound_MidFadeOutRPMpercent = 70,
 		Sound_MidFadeOutRate = 0.5,
 		
-		Sound_High = "mafia/fordA1_NPC.wav",
+		Sound_High = "mafia/fordA_2.wav",
 		Sound_HighPitch = 1,
 		Sound_HighVolume = 1,
 		Sound_HighFadeInRPMpercent = 70,
 		Sound_HighFadeInRate = 0.5,
 		
-		Sound_Throttle = "mafia/fordA1_NPC.wav",
+		Sound_Throttle = "mafia/fordA_3.wav",
 		Sound_ThrottlePitch = 1,
 		Sound_ThrottleVolume = 1,
 		
@@ -6671,33 +6590,23 @@ local V = {
 		
 		EngineSoundPreset = 0,
 		
-		snd_pitch = 0.9,
-		snd_idle = "mafia/fordA1_NPC.wav",
-		
-		snd_low = "mafia/fordA1_NPC.wav",
-		snd_low_revdown = "mafia/fordA1_NPC.wav",
-		snd_low_pitch = 0.9,
-		
-		snd_mid = "mafia/fordA1_NPC.wav",
-		snd_mid_gearup = "mafia/fordA1_NPC.wav",
-		snd_mid_pitch = 0.9,
 		--
-		Sound_Idle = "mafia/fordA1_NPC.wav",
+		Sound_Idle = "mafia/fordA_X.wav",
 		Sound_IdlePitch = 1,
 		
-		Sound_Mid = "mafia/fordA1_NPC.wav",
-		Sound_MidPitch = 1,
+		Sound_Mid = "mafia/fordA_1.wav",
+		Sound_MidPitch = 1.2,
 		Sound_MidVolume = 1,
 		Sound_MidFadeOutRPMpercent = 70,
 		Sound_MidFadeOutRate = 0.5,
 		
-		Sound_High = "mafia/fordA1_NPC.wav",
+		Sound_High = "mafia/fordA_2.wav",
 		Sound_HighPitch = 1,
 		Sound_HighVolume = 1,
 		Sound_HighFadeInRPMpercent = 70,
 		Sound_HighFadeInRate = 0.5,
 		
-		Sound_Throttle = "mafia/fordA1_NPC.wav",
+		Sound_Throttle = "mafia/fordA_3.wav",
 		Sound_ThrottlePitch = 1,
 		Sound_ThrottleVolume = 1,
 		
