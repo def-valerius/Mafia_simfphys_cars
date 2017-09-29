@@ -7949,9 +7949,9 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
-		FuelFillPos = Vector(20,0,40),
+		FuelFillPos = Vector(30,0,40),
 		FuelType = FUELTYPE_PETROL,
-		FuelTankSize = 45,
+		FuelTankSize = 20,
 		
 		PowerBias = 0.4,
 		
@@ -7980,7 +7980,7 @@ local V = {
 		snd_horn = "mafia/horn4.wav",
 		
 		DifferentialGear = 0.6,
-		Gears = {-0.12,0,0.12,0.24,0.39}
+		Gears = {-0.12,0,0.12,0.23,0.37}
 	}
 }
 list.Set( "simfphys_vehicles", "simfphys_mafia_hotrodp6", V )
